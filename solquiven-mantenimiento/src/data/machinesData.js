@@ -8,7 +8,7 @@ export const machinesData = [
   {
     id: 'M-LLEN',
     code: 'LLEN-INLINE',
-    name: 'Máquina Llenadora Automática en Línea',
+    name: 'Maquina Llenadora Automática en Línea',
     brand: 'INLINE FILLING SYSTEMS',
     model: 'S/I',
     serials: '22300 / 22285',
