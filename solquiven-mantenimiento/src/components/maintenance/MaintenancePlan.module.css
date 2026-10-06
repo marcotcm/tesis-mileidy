@@ -1,0 +1,71 @@
+.mtto_container { display: flex; flex-direction: column; height: 100%; animation: fadeInUp 0.3s ease-out; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.mtto_card { 
+  background: white; 
+  border-radius: 0.75rem; 
+  border: 1px solid #e2e8f0; 
+  border-top: 4px solid #003882; 
+  display: flex; 
+  flex-direction: column; 
+  flex: 1; 
+  overflow: hidden; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+
+/* Cabecera del Documento */
+.mtto_docHeader { border-bottom: 1px solid #cbd5e1; }
+.mtto_docTitle { background: #f1f5f9; text-align: center; padding: 0.75rem; border-bottom: 1px solid #cbd5e1; font-size: 1rem; font-weight: 900; color: #1e293b; text-transform: uppercase; letter-spacing: 0.05em; }
+@media (min-width: 768px) { .mtto_docTitle { font-size: 1.125rem; } }
+
+.mtto_docRow { display: flex; flex-direction: column; border-bottom: 1px solid #cbd5e1; }
+@media (min-width: 640px) { .mtto_docRow { flex-direction: row; } }
+
+.mtto_docCol { padding: 0.75rem; background: white; }
+.mtto_docColMain { flex: 1; }
+.mtto_docColSide { width: 100%; }
+@media (min-width: 640px) {
+    .mtto_docColMain { border-right: 1px solid #cbd5e1; border-bottom: none; }
+    .mtto_docColSide { width: 16rem; }
+}
+
+.mtto_docBgGray { background: #f8fafc; }
+.mtto_docLabel { font-size: 0.7rem; font-weight: 700; color: #64748b; text-transform: uppercase; }
+.mtto_docValue { font-size: 0.875rem; font-weight: 700; color: #003882; }
+.mtto_docValueDark { color: #1e293b; font-weight: 700; font-size: 0.875rem; }
+
+/* Tabla Formal */
+.mtto_tableWrapper { flex: 1; overflow: auto; padding: 1rem; background: white; }
+.mtto_tableBorder { border-radius: 0.5rem; border: 1px solid #cbd5e1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+.mtto_table { width: 100%; text-align: left; border-collapse: collapse; min-width: 900px; }
+
+.mtto_th { padding: 0.75rem 1rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; background: #003882; color: white; border-right: 1px solid #1e40af; border-bottom: 2px solid #00285e; }
+.mtto_thCenter { text-align: center; }
+.mtto_thAccent { color: #FFC107; }
+
+.mtto_tr { background: white; transition: background 0.2s; border-bottom: 1px solid #e2e8f0; }
+.mtto_tr:hover { background: #f0f7ff; }
+
+.mtto_td { padding: 0.875rem 1rem; font-size: 0.875rem; color: #334155; border-right: 1px solid #e2e8f0; vertical-align: top; line-height: 1.4; }
+.mtto_tdBoldCenter { font-weight: 700; text-align: center; background: #f8fafc; color: #003882; vertical-align: middle; }
+.mtto_tdCenter { text-align: center; vertical-align: middle; }
+
+/* Indicador de Días */
+.mtto_daysBox { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.375rem; }
+.mtto_daysRow { display: flex; align-items: center; gap: 0.375rem; }
+.mtto_iconCirc { width: 1.5rem; height: 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid; }
+.mtto_daysText { font-size: 0.875rem; font-weight: 900; }
+.mtto_badge { padding: 0.125rem 0.5rem; border-radius: 0.25rem; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; border: 1px solid; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+
+/* Colores por urgencia */
+.urg_red_circ { background: #fef2f2; border-color: #fecaca; color: #ef4444; }
+.urg_red_text { color: #dc2626; }
+.urg_red_badge { background: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
+
+.urg_amb_circ { background: #fffbeb; border-color: #fde68a; color: #f59e0b; }
+.urg_amb_text { color: #d97706; }
+.urg_amb_badge { background: #fef3c7; color: #b45309; border-color: #fcd34d; }
+
+.urg_grn_circ { background: #f0fdf4; border-color: #bbf7d0; color: #22c55e; }
+.urg_grn_text { color: #16a34a; }
+.urg_grn_badge { background: #dcfce7; color: #15803d; border-color: #86efac; }

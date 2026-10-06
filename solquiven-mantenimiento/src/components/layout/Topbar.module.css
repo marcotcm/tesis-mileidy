@@ -1,0 +1,39 @@
+.topbar_header { 
+  background-color: #003882; 
+  color: white; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 1.5rem; 
+  height: 4rem; 
+  border-bottom: 4px solid #FFC107; 
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+  flex-shrink: 0; 
+}
+
+.topbar_title { 
+  font-size: 1.125rem; 
+  font-weight: 700; 
+  letter-spacing: 0.05em; 
+}
+
+@media (min-width: 768px) { 
+  .topbar_title { 
+    font-size: 1.25rem; 
+  } 
+}
+
+.topbar_company { 
+  font-weight: 700; 
+  font-size: 0.875rem; 
+  letter-spacing: 0.1em; 
+  color: #FFC107; 
+  text-align: right; 
+  margin-bottom: 2px;
+}
+
+.topbar_subtitle { 
+  font-size: 0.75rem; 
+  color: #bfdbfe; 
+  text-align: right; 
+}

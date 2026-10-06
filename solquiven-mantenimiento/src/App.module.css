@@ -1,0 +1,44 @@
+.app_container { display: flex; height: 100vh; overflow: hidden; }
+.app_mainWrapper { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.app_mainContent { flex: 1; padding: 1.5rem; overflow-y: auto; position: relative; }
+
+@media (min-width: 768px) { 
+  .app_mainContent { padding: 2rem; } 
+}
+
+.app_backgroundPattern { 
+  position: absolute; 
+  inset: 0; 
+  opacity: 0.05; 
+  pointer-events: none; 
+  background-image: radial-gradient(#003882 1px, transparent 1px); 
+  background-size: 30px 30px; 
+}
+
+.app_contentInner { 
+  position: relative; 
+  z-index: 10; 
+  height: 100%; 
+  max-width: 1400px; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.app_footer { 
+  background: white; 
+  border-top: 1px solid #e2e8f0; 
+  padding: 0.75rem 1.5rem; 
+  display: flex; 
+  justify-content: space-between; 
+  font-size: 0.75rem; 
+  color: #64748b; 
+  flex-shrink: 0; 
+}
+
+/* Pantallas vacías (BlankModule) */
+.blank_container { display: flex; align-items: center; justify-content: center; height: 100%; }
+.blank_content { text-align: center; color: #94a3b8; }
+.blank_icon { margin: 0 auto 1rem auto; opacity: 0.5; color: #cbd5e1; }
+.blank_title { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #64748b; }
+.blank_text { font-size: 0.875rem; }
