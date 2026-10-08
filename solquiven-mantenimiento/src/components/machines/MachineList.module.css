@@ -3,12 +3,14 @@
   flex-direction: column; 
   height: 100%; 
 }
+
 .list_header { 
   margin-bottom: 1.5rem; 
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
 }
+
 .list_title { 
   font-size: 1.25rem; 
   font-weight: 700; 
@@ -59,6 +61,7 @@
   width: 100%; 
   max-width: 24rem; 
 }
+
 .list_searchIcon { 
   position: absolute; 
   left: 0.75rem; 
@@ -77,8 +80,15 @@
   transition: border-color 0.2s; 
 }
 
-.list_searchInput:focus { border-color: #003882; box-shadow: 0 0 0 2px rgba(0,56,130,0.1); }
-.list_actions { display: flex; gap: 0.5rem; }
+.list_searchInput:focus { 
+  border-color: #003882; 
+  box-shadow: 0 0 0 2px rgba(0,56,130,0.1); 
+}
+
+.list_actions { 
+  display: flex; 
+  gap: 0.5rem; 
+}
 
 .list_btnPrimary { 
   display: flex; 
@@ -92,8 +102,12 @@
   font-weight: 500; 
   border: 1px solid #003882; 
   transition: background 0.2s; 
+  cursor: pointer;
 }
-.list_btnPrimary:hover { background: #00285e; }
+
+.list_btnPrimary:hover { 
+  background: #00285e; 
+}
 
 .list_btnSecondary { 
   display: flex; 
@@ -107,11 +121,24 @@
   font-weight: 500; 
   border: 1px solid #cbd5e1; 
   transition: background 0.2s; 
+  cursor: pointer;
 }
-.list_btnSecondary:hover { background: #f8fafc; }
 
-.list_tableWrap { flex: 1; overflow: auto; }
-.list_table { width: 100%; text-align: left; border-collapse: collapse; min-width: 800px; }
+.list_btnSecondary:hover { 
+  background: #f8fafc; 
+}
+
+.list_tableWrap { 
+  flex: 1; 
+  overflow: auto; 
+}
+
+.list_table { 
+  width: 100%; 
+  text-align: left; 
+  border-collapse: collapse; 
+  min-width: 800px; 
+}
 
 .list_th { 
   padding: 0.75rem 1rem; 
@@ -126,14 +153,36 @@
   z-index: 10; 
 }
 
-.list_tr { transition: background-color 0.2s; cursor: pointer; border-bottom: 1px solid #f1f5f9; }
-.list_tr:hover { background-color: #f0f7ff; }
+.list_tr { 
+  transition: background-color 0.2s; 
+  cursor: pointer; 
+  border-bottom: 1px solid #f1f5f9; 
+}
 
-.list_td { padding: 1rem; font-size: 0.875rem; color: #334155; }
-.list_tdBold { font-weight: 700; color: #0f172a; }
-.list_tr:hover .list_tdBold { color: #003882; }
-.list_tdSub { color: #64748b; }
+.list_tr:hover { 
+  background-color: #f0f7ff; 
+}
 
+.list_td { 
+  padding: 1rem; 
+  font-size: 0.875rem; 
+  color: #334155; 
+}
+
+.list_tdBold { 
+  font-weight: 700; 
+  color: #0f172a; 
+}
+
+.list_tr:hover .list_tdBold { 
+  color: #003882; 
+}
+
+.list_tdSub { 
+  color: #64748b; 
+}
+
+/* Estados - Operativo (Verde) */
 .list_statusOk { 
   display: inline-flex; 
   padding: 0.25rem 0.625rem; 
@@ -143,4 +192,28 @@
   background: #dcfce7; 
   color: #15803d; 
   border: 1px solid #bbf7d0; 
+}
+
+/* Estados - Inoperativo (Gris) */
+.list_statusGray { 
+  display: inline-flex; 
+  padding: 0.25rem 0.625rem; 
+  font-size: 0.75rem; 
+  font-weight: 700; 
+  border-radius: 9999px; 
+  background: #f1f5f9; 
+  color: #64748b; 
+  border: 1px solid #e2e8f0; 
+}
+
+/* Estados - Dañado (Rojo) */
+.list_statusRed { 
+  display: inline-flex; 
+  padding: 0.25rem 0.625rem; 
+  font-size: 0.75rem; 
+  font-weight: 700; 
+  border-radius: 9999px; 
+  background: #fee2e2; 
+  color: #b91c1c; 
+  border: 1px solid #fca5a5; 
 }

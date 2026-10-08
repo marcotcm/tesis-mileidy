@@ -15,6 +15,18 @@ const MachineList = ({ onSelectMachine }) => {
     m.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // Función para determinar la clase CSS según el estado
+  const getStatusClass = (status) => {
+    // Normalizamos el texto (minúsculas y sin acentos) para evitar errores de escritura
+    const normalizedStatus = status.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    
+    if (normalizedStatus.includes('inoperativo')) return styles.list_statusGray;
+    if (normalizedStatus.includes('danado') || normalizedStatus.includes('malo')) return styles.list_statusRed;
+    if (normalizedStatus.includes('operativo')) return styles.list_statusOk;
+    
+    return styles.list_statusGray; // Por defecto
+  };
+
   return (
     <div className={styles.list_container}>
       <div className={styles.list_header}>
@@ -65,7 +77,7 @@ const MachineList = ({ onSelectMachine }) => {
                   <td className={styles.list_td}><span className={styles.list_tdSub}>{machine.brand} ({machine.model})</span></td>
                   <td className={styles.list_td}><span className={styles.list_tdSub}>{machine.area}</span></td>
                   <td className={styles.list_td}>
-                    <span className={styles.list_statusOk}>{machine.status}</span>
+                    <span className={getStatusClass(machine.status)}>{machine.status}</span>
                   </td>
                 </tr>
               ))}
