@@ -171,7 +171,7 @@ export const machinesData = [
     cost: '9.500 $ (aprox.)',
     characteristics: '220 VAC, 60 Hz, 1,5 KW, Peso 220 kg (aprox.), 1,60 x 0,80 x 1,30 mts (aprox.)',
     area: 'Línea de Producción Principal',
-    status: 'Operativo',
+    status: 'Inoperativo',
     criticality: 'Alta',
     description: 'Aplicación automática y sincronizada de etiquetas sobre los envases.',
     
