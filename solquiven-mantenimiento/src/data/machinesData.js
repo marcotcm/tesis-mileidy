@@ -159,7 +159,6 @@ export const machinesData = [
       }
     ]
   },
-  [
   {
     id: 'M-ETIQ',
     code: 'ETIQ-ME320',
