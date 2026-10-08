@@ -2,13 +2,17 @@
  * @file MaintenancePlan.jsx
  * @description Muestra el plan anual de mantenimiento preventivo tabulado, con alertas por fechas.
  */
-import React from 'react';
+import React, { useState } from 'react';
 import { Clock } from 'lucide-react';
 import { machinesData } from '../../data/machinesData';
 import styles from './MaintenancePlan.module.css';
 
 const MaintenancePlan = () => {
-  const machine = machinesData[0]; // Usamos la llenadora por defecto según requerimiento original
+  // Estado para controlar la máquina seleccionada (por defecto la primera: índice 0)
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  
+  // Obtenemos la máquina en base al índice seleccionado
+  const machine = machinesData[selectedIndex];
 
   const getStatusClasses = (days) => {
     if (days <= 3) return { circ: styles.urg_red_circ, text: styles.urg_red_text, badge: styles.urg_red_badge };
@@ -30,6 +34,34 @@ const MaintenancePlan = () => {
 
   return (
     <div className={styles.mtto_container}>
+      
+      {/* Combobox para seleccionar la máquina */}
+      <div style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <label htmlFor="machineSelect" style={{ fontWeight: 'bold', color: '#333' }}>
+          Seleccionar Máquina:
+        </label>
+        <select 
+          id="machineSelect"
+          value={selectedIndex} 
+          onChange={(e) => setSelectedIndex(Number(e.target.value))}
+          style={{
+            padding: '8px 12px',
+            borderRadius: '6px',
+            border: '1px solid #ccc',
+            backgroundColor: '#fff',
+            fontSize: '14px',
+            cursor: 'pointer',
+            minWidth: '250px'
+          }}
+        >
+          {machinesData.map((m, index) => (
+            <option key={m.code || index} value={index}>
+              {m.name} ({m.code})
+            </option>
+          ))}
+        </select>
+      </div>
+
       <div className={styles.mtto_card}>
         
         {/* Cabecera Formal del Documento */}
@@ -52,7 +84,9 @@ const MaintenancePlan = () => {
             <div className={`${styles.mtto_docRow} ${styles.mtto_docBgGray}`}>
                 <div className={`${styles.mtto_docCol} ${styles.mtto_docColMain} ${styles.mtto_docBgGray}`}>
                     <span className={styles.mtto_docLabel}>Nombre del Equipo:</span>
-                    <p className={styles.mtto_docValueDark} style={{textTransform: 'capitalize'}}>{machine.name.toLowerCase()}</p>
+                    <p className={styles.mtto_docValueDark} style={{textTransform: 'capitalize'}}>
+                      {machine.name.toLowerCase()}
+                    </p>
                 </div>
                 <div className={`${styles.mtto_docCol} ${styles.mtto_docColSide} ${styles.mtto_docBgGray}`}>
                     <span className={styles.mtto_docLabel}>Código:</span>
