@@ -8,10 +8,7 @@ import { machinesData } from '../../data/machinesData';
 import styles from './MaintenancePlan.module.css';
 
 const MaintenancePlan = () => {
-  // Estado para controlar la máquina seleccionada (por defecto la primera: índice 0)
   const [selectedIndex, setSelectedIndex] = useState(0);
-  
-  // Obtenemos la máquina en base al índice seleccionado
   const machine = machinesData[selectedIndex];
 
   const getStatusClasses = (days) => {
@@ -35,24 +32,16 @@ const MaintenancePlan = () => {
   return (
     <div className={styles.mtto_container}>
       
-      {/* Combobox para seleccionar la máquina */}
-      <div style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
-        <label htmlFor="machineSelect" style={{ fontWeight: 'bold', color: '#333' }}>
-          Seleccionar Máquina:
+      {/* Combobox estilizado con CSS */}
+      <div className={styles.mtto_selectContainer}>
+        <label htmlFor="machineSelect" className={styles.mtto_selectLabel}>
+          Seleccionar Equipo:
         </label>
         <select 
           id="machineSelect"
+          className={styles.mtto_selectInput}
           value={selectedIndex} 
           onChange={(e) => setSelectedIndex(Number(e.target.value))}
-          style={{
-            padding: '8px 12px',
-            borderRadius: '6px',
-            border: '1px solid #ccc',
-            backgroundColor: '#fff',
-            fontSize: '14px',
-            cursor: 'pointer',
-            minWidth: '250px'
-          }}
         >
           {machinesData.map((m, index) => (
             <option key={m.code || index} value={index}>
@@ -63,7 +52,6 @@ const MaintenancePlan = () => {
       </div>
 
       <div className={styles.mtto_card}>
-        
         {/* Cabecera Formal del Documento */}
         <div className={styles.mtto_docHeader}>
             <div className={styles.mtto_docTitle}>
@@ -95,7 +83,7 @@ const MaintenancePlan = () => {
             </div>
         </div>
 
-        {/* Tabla Formal de Tareas */}
+        {/* Tabla Formal de Tareas (Con scroll en móvil) */}
         <div className={styles.mtto_tableWrapper}>
            <div className={styles.mtto_tableBorder}>
              <table className={styles.mtto_table}>
@@ -117,7 +105,6 @@ const MaintenancePlan = () => {
                        <td className={styles.mtto_td}>{task.task}</td>
                        <td className={`${styles.mtto_td} ${styles.mtto_tdBoldCenter}`}>{task.frequency}</td>
                        <td className={`${styles.mtto_td} ${styles.mtto_tdCenter}`}>
-                          
                           <div className={styles.mtto_daysBox}>
                               <div className={styles.mtto_daysRow}>
                                   <div className={`${styles.mtto_iconCirc} ${status.circ}`}>
@@ -131,7 +118,6 @@ const MaintenancePlan = () => {
                                   {getBadgeText(task.daysRemaining)}
                               </span>
                           </div>
-
                        </td>
                      </tr>
                    )
