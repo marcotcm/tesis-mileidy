@@ -1,0 +1,2168 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  favicon.svg
+  icons.svg
+src/
+  assets/
+    hero.png
+    react.svg
+    vite.svg
+  components/
+    layout/
+      Sidebar.jsx
+      Sidebar.module.css
+      Topbar.jsx
+      Topbar.module.css
+    machines/
+      MachineDetails.jsx
+      MachineDetails.module.css
+      MachineList.jsx
+      MachineList.module.css
+    maintenance/
+      MaintenancePlan.jsx
+      MaintenancePlan.module.css
+  data/
+    machinesData.js
+  pages/
+    MachineModule.jsx
+    MachineModule.module.css
+    MaintenanceModule.jsx
+    MaintenanceModule.module.css
+  App.jsx
+  App.module.css
+  index.css
+  main.jsx
+.gitignore
+eslint.config.js
+index.html
+package.json
+README.md
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/favicon.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" fill="none" viewBox="0 0 48 46"><path fill="#863bff" d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z" style="fill:#863bff;fill:color(display-p3 .5252 .23 1);fill-opacity:1"/><mask id="a" width="48" height="46" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M25.842 44.938c-.664.844-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.183c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.498 0-3.579-1.842-3.579H1.133c-.92 0-1.456-1.04-.92-1.787L9.91.473c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.578 1.842 3.578h11.377c.943 0 1.473 1.088.89 1.832L25.843 44.94z" style="fill:#000;fill-opacity:1"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#ede6ff" rx="5.508" ry="14.704" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -4.47 31.516)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#ede6ff" rx="10.399" ry="29.851" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -39.328 7.883)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#7e14ff" rx="5.508" ry="30.487" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -25.913 -14.639)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -32.644 -3.334)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -34.34 30.47)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#ede6ff" rx="14.072" ry="22.078" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="rotate(93.35 24.506 48.493)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx=".387" cy="8.972" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(39.51 .387 8.972)"/></g><g filter="url(#k)"><ellipse cx="47.523" cy="-6.092" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 47.523 -6.092)"/></g><g filter="url(#l)"><ellipse cx="41.412" cy="6.333" fill="#47bfff" rx="5.971" ry="9.665" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 41.412 6.333)"/></g><g filter="url(#m)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#n)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#o)"><ellipse cx="35.651" cy="29.907" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 35.651 29.907)"/></g><g filter="url(#p)"><ellipse cx="38.418" cy="32.4" fill="#47bfff" rx="5.971" ry="15.297" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 38.418 32.4)"/></g></g><defs><filter id="b" width="60.045" height="41.654" x="-19.77" y="16.149" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-54.613" y="-7.533" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-49.64" y="2.03" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-45.045" y="20.029" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-43.513" y="21.178" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="15.756" y="-17.901" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-27.636" y="-22.853" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="20.116" y="-38.415" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="24.641" y="-11.323" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="8.244" y="-2.416" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="18.713" y="10.588" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="public/icons.svg">
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bluesky-icon" viewBox="0 0 16 17">
+    <g clip-path="url(#bluesky-clip)"><path fill="#08060d" d="M7.75 7.735c-.693-1.348-2.58-3.86-4.334-5.097-1.68-1.187-2.32-.981-2.74-.79C.188 2.065.1 2.812.1 3.251s.241 3.602.398 4.13c.52 1.744 2.367 2.333 4.07 2.145-2.495.37-4.71 1.278-1.805 4.512 3.196 3.309 4.38-.71 4.987-2.746.608 2.036 1.307 5.91 4.93 2.746 2.72-2.746.747-4.143-1.747-4.512 1.702.189 3.55-.4 4.07-2.145.156-.528.397-3.691.397-4.13s-.088-1.186-.575-1.406c-.42-.19-1.06-.395-2.741.79-1.755 1.24-3.64 3.752-4.334 5.099"/></g>
+    <defs><clipPath id="bluesky-clip"><path fill="#fff" d="M.1.85h15.3v15.3H.1z"/></clipPath></defs>
+  </symbol>
+  <symbol id="discord-icon" viewBox="0 0 20 19">
+    <path fill="#08060d" d="M16.224 3.768a14.5 14.5 0 0 0-3.67-1.153c-.158.286-.343.67-.47.976a13.5 13.5 0 0 0-4.067 0c-.128-.306-.317-.69-.476-.976A14.4 14.4 0 0 0 3.868 3.77C1.546 7.28.916 10.703 1.231 14.077a14.7 14.7 0 0 0 4.5 2.306q.545-.748.965-1.587a9.5 9.5 0 0 1-1.518-.74q.191-.14.372-.293c2.927 1.369 6.107 1.369 8.999 0q.183.152.372.294-.723.437-1.52.74.418.838.963 1.588a14.6 14.6 0 0 0 4.504-2.308c.37-3.911-.63-7.302-2.644-10.309m-9.13 8.234c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.894 0 1.614.82 1.599 1.82.001 1-.705 1.82-1.6 1.82m5.91 0c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.893 0 1.614.82 1.599 1.82 0 1-.706 1.82-1.6 1.82"/>
+  </symbol>
+  <symbol id="documentation-icon" viewBox="0 0 21 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="m15.5 13.333 1.533 1.322c.645.555.967.833.967 1.178s-.322.623-.967 1.179L15.5 18.333m-3.333-5-1.534 1.322c-.644.555-.966.833-.966 1.178s.322.623.966 1.179l1.534 1.321"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M17.167 10.836v-4.32c0-1.41 0-2.117-.224-2.68-.359-.906-1.118-1.621-2.08-1.96-.599-.21-1.349-.21-2.848-.21-2.623 0-3.935 0-4.983.369-1.684.591-3.013 1.842-3.641 3.428C3 6.449 3 7.684 3 10.154v2.122c0 2.558 0 3.838.706 4.726q.306.383.713.671c.76.536 1.79.64 3.581.66"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M3 10a2.78 2.78 0 0 1 2.778-2.778c.555 0 1.209.097 1.748-.047.48-.129.854-.503.982-.982.145-.54.048-1.194.048-1.749a2.78 2.78 0 0 1 2.777-2.777"/>
+  </symbol>
+  <symbol id="github-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M9.356 1.85C5.05 1.85 1.57 5.356 1.57 9.694a7.84 7.84 0 0 0 5.324 7.44c.387.079.528-.168.528-.376 0-.182-.013-.805-.013-1.454-2.165.467-2.616-.935-2.616-.935-.349-.91-.864-1.143-.864-1.143-.71-.48.051-.48.051-.48.787.051 1.2.805 1.2.805.695 1.194 1.817.857 2.268.649.064-.507.27-.857.49-1.052-1.728-.182-3.545-.857-3.545-3.87 0-.857.31-1.558.8-2.104-.078-.195-.349-1 .077-2.078 0 0 .657-.208 2.14.805a7.5 7.5 0 0 1 1.946-.26c.657 0 1.328.092 1.946.26 1.483-1.013 2.14-.805 2.14-.805.426 1.078.155 1.883.078 2.078.502.546.799 1.247.799 2.104 0 3.013-1.818 3.675-3.558 3.87.284.247.528.714.528 1.454 0 1.052-.012 1.896-.012 2.156 0 .208.142.455.528.377a7.84 7.84 0 0 0 5.324-7.441c.013-4.338-3.48-7.844-7.773-7.844" clip-rule="evenodd"/>
+  </symbol>
+  <symbol id="social-icon" viewBox="0 0 20 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M12.5 6.667a4.167 4.167 0 1 0-8.334 0 4.167 4.167 0 0 0 8.334 0"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M2.5 16.667a5.833 5.833 0 0 1 8.75-5.053m3.837.474.513 1.035c.07.144.257.282.414.309l.93.155c.596.1.736.536.307.965l-.723.73a.64.64 0 0 0-.152.531l.207.903c.164.715-.213.991-.84.618l-.872-.52a.63.63 0 0 0-.577 0l-.872.52c-.624.373-1.003.094-.84-.618l.207-.903a.64.64 0 0 0-.152-.532l-.723-.729c-.426-.43-.289-.864.306-.964l.93-.156a.64.64 0 0 0 .412-.31l.513-1.034c.28-.562.735-.562 1.012 0"/>
+  </symbol>
+  <symbol id="x-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M1.893 1.98c.052.072 1.245 1.769 2.653 3.77l2.892 4.114c.183.261.333.48.333.486s-.068.089-.152.183l-.522.593-.765.867-3.597 4.087c-.375.426-.734.834-.798.905a1 1 0 0 0-.118.148c0 .01.236.017.664.017h.663l.729-.83c.4-.457.796-.906.879-.999a692 692 0 0 0 1.794-2.038c.034-.037.301-.34.594-.675l.551-.624.345-.392a7 7 0 0 1 .34-.374c.006 0 .93 1.306 2.052 2.903l2.084 2.965.045.063h2.275c1.87 0 2.273-.003 2.266-.021-.008-.02-1.098-1.572-3.894-5.547-2.013-2.862-2.28-3.246-2.273-3.266.008-.019.282-.332 2.085-2.38l2-2.274 1.567-1.782c.022-.028-.016-.03-.65-.03h-.674l-.3.342a871 871 0 0 1-1.782 2.025c-.067.075-.405.458-.75.852a100 100 0 0 1-.803.91c-.148.172-.299.344-.99 1.127-.304.343-.32.358-.345.327-.015-.019-.904-1.282-1.976-2.808L6.365 1.85H1.8zm1.782.91 8.078 11.294c.772 1.08 1.413 1.973 1.425 1.984.016.017.241.02 1.05.017l1.03-.004-2.694-3.766L7.796 5.75 5.722 2.852l-1.039-.004-1.039-.004z" clip-rule="evenodd"/>
+  </symbol>
+</svg>
+</file>
+
+<file path="src/assets/react.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+</file>
+
+<file path="src/assets/vite.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="47" fill="none" aria-labelledby="vite-logo-title" viewBox="0 0 77 47"><title id="vite-logo-title">Vite</title><style>.parenthesis{fill:#000}@media (prefers-color-scheme:dark){.parenthesis{fill:#fff}}</style><path fill="#9135ff" d="M40.151 45.71c-.663.844-2.02.374-2.02-.699V34.708a2.26 2.26 0 0 0-2.262-2.262H24.493c-.92 0-1.457-1.04-.92-1.788l7.479-10.471c1.07-1.498 0-3.578-1.842-3.578H15.443c-.92 0-1.456-1.04-.92-1.788l9.696-13.576c.213-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.472c-1.07 1.497 0 3.578 1.842 3.578h11.376c.944 0 1.474 1.087.89 1.83L40.153 45.712z"/><mask id="a" width="48" height="47" x="14" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M40.047 45.71c-.663.843-2.02.374-2.02-.699V34.708a2.26 2.26 0 0 0-2.262-2.262H24.389c-.92 0-1.457-1.04-.92-1.788l7.479-10.472c1.07-1.497 0-3.578-1.842-3.578H15.34c-.92 0-1.456-1.04-.92-1.788l9.696-13.575c.213-.297.556-.474.92-.474H53.93c.92 0 1.456 1.04.92 1.788L47.37 13.03c-1.07 1.498 0 3.578 1.842 3.578h11.376c.944 0 1.474 1.088.89 1.831L40.049 45.712z"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#eee6ff" rx="5.508" ry="14.704" transform="rotate(269.814 20.96 11.29)scale(-1 1)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#eee6ff" rx="10.399" ry="29.851" transform="rotate(89.814 -16.902 -8.275)scale(1 -1)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#8900ff" rx="5.508" ry="30.487" transform="rotate(89.814 -19.197 -7.127)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#8900ff" rx="5.508" ry="30.599" transform="rotate(89.814 -25.928 4.177)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#8900ff" rx="5.508" ry="30.599" transform="rotate(89.814 -25.738 5.52)scale(1 -1)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#eee6ff" rx="14.072" ry="22.078" transform="rotate(93.35 31.245 55.578)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#8900ff" rx="3.47" ry="21.501" transform="rotate(89.009 35.419 55.202)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#8900ff" rx="3.47" ry="21.501" transform="rotate(89.009 35.419 55.202)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx="14.592" cy="9.743" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(39.51 14.592 9.743)"/></g><g filter="url(#k)"><ellipse cx="61.728" cy="-5.321" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 61.728 -5.32)"/></g><g filter="url(#l)"><ellipse cx="55.618" cy="7.104" fill="#00c2ff" rx="5.971" ry="9.665" transform="rotate(37.892 55.618 7.104)"/></g><g filter="url(#m)"><ellipse cx="12.326" cy="39.103" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 12.326 39.103)"/></g><g filter="url(#n)"><ellipse cx="12.326" cy="39.103" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 12.326 39.103)"/></g><g filter="url(#o)"><ellipse cx="49.857" cy="30.678" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 49.857 30.678)"/></g><g filter="url(#p)"><ellipse cx="52.623" cy="33.171" fill="#00c2ff" rx="5.971" ry="15.297" transform="rotate(37.892 52.623 33.17)"/></g></g><path d="M6.919 0c-9.198 13.166-9.252 33.575 0 46.789h6.215c-9.25-13.214-9.196-33.623 0-46.789zm62.424 0h-6.215c9.198 13.166 9.252 33.575 0 46.789h6.215c9.25-13.214 9.196-33.623 0-46.789" class="parenthesis"/><defs><filter id="b" width="60.045" height="41.654" x="-5.564" y="16.92" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-40.407" y="-6.762" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-35.435" y="2.801" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-30.84" y="20.8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-29.307" y="21.949" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="29.961" y="-17.13" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="37.754" y="3.055" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="37.754" y="3.055" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-13.43" y="-22.082" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="34.321" y="-37.644" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="38.847" y="-10.552" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-15.081" y="6.78" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-15.081" y="6.78" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="22.45" y="-1.645" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="32.919" y="11.36" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="src/components/layout/Sidebar.jsx">
+/**
+ * @file Sidebar.jsx
+ * @description Panel lateral de navegación principal del sistema.
+ */
+import React from 'react';
+import { Home, Database, Calendar, Settings } from 'lucide-react';
+import styles from './Sidebar.module.css';
+
+const Sidebar = ({ activeModule, setActiveModule, currentDate }) => {
+  const menuItems = [
+    { id: 'inicio', icon: Home, label: 'INICIO', subLabel: 'Dashboard' },
+    { id: 'fichas', icon: Database, label: 'FICHAS DE MÁQUINAS', subLabel: 'Datos y Fallas' },
+    { id: 'planes', icon: Calendar, label: 'PLANES DE MANT.', subLabel: 'Preventivo' },
+    { id: 'ajustes', icon: Settings, label: 'AJUSTES', subLabel: 'Sistema' },
+  ];
+
+  return (
+    <aside className={styles.sidebar_container}>
+      <div className={styles.sidebar_logoArea}>
+        <span className={styles.sidebar_logoText}>S<span className={styles.sidebar_logoO}>O</span>LQUIVEN</span>
+        <span className={styles.sidebar_logoSub}>SOLUCIONES QUÍMICAS</span>
+      </div>
+
+      <nav className={styles.sidebar_nav}>
+        <ul className={styles.sidebar_ul}>
+          {menuItems.map((item) => {
+            const Icon = item.icon;
+            const isActive = activeModule === item.id;
+            return (
+              <li key={item.id}>
+                <button
+                  onClick={() => setActiveModule(item.id)}
+                  className={`${styles.sidebar_btn} ${isActive ? styles.sidebar_btnActive : styles.sidebar_btnInactive}`}
+                >
+                  <Icon size={22} className={`${styles.sidebar_icon} ${isActive ? styles.sidebar_iconActive : styles.sidebar_iconInactive}`} />
+                  <div>
+                    <p className={styles.sidebar_label}>{item.label}</p>
+                    <p className={`${styles.sidebar_subLabel} ${isActive ? styles.sidebar_subActive : styles.sidebar_subInactive}`}>{item.subLabel}</p>
+                  </div>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+
+      <div className={styles.sidebar_dateArea}>
+        <div className={styles.sidebar_dateTag}>
+           <Calendar size={14}/> {currentDate}
+        </div>
+      </div>
+    </aside>
+  );
+};
+
+export default Sidebar;
+</file>
+
+<file path="src/components/layout/Sidebar.module.css">
+.sidebar_container { 
+  width: 16rem; 
+  background-color: #f8fafc; 
+  border-right: 1px solid #e2e8f0; 
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+  flex-shrink: 0; 
+  box-shadow: 4px 0 15px -3px rgba(0,0,0,0.05); 
+  z-index: 20; 
+}
+
+.sidebar_logoArea { 
+  padding: 1.5rem; 
+  height: 6rem; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border-bottom: 1px solid #e2e8f0; 
+  background: white; 
+  flex-direction: column; 
+}
+
+.sidebar_logoText { 
+  font-size: 2rem; 
+  font-weight: 900; 
+  color: #003882; 
+  letter-spacing: -0.05em; 
+  line-height: 1;
+}
+
+.sidebar_logoO { 
+  color: #00b0f0; 
+}
+
+.sidebar_logoSub { 
+  font-size: 0.55rem; 
+  font-weight: 700; 
+  color: #FFC107; 
+  background: #003882; 
+  padding: 2px 4px; 
+  border-radius: 4px; 
+  letter-spacing: 0.1em; 
+  margin-top: 4px; 
+}
+
+.sidebar_nav { 
+  flex: 1; 
+  padding: 1rem 0; 
+  overflow-y: auto; 
+}
+
+.sidebar_ul { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.25rem; 
+  padding: 0 0.75rem; 
+}
+
+.sidebar_btn { 
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  gap: 0.75rem; 
+  padding: 0.75rem 1rem; 
+  border-radius: 0.75rem; 
+  transition: all 0.2s; 
+  border-left: 4px solid transparent; 
+  text-align: left;
+}
+
+.sidebar_btnInactive { color: #475569; }
+.sidebar_btnInactive:hover { background-color: #e2e8f0; color: #003882; }
+
+.sidebar_btnActive { 
+  background-color: #003882; 
+  color: white; 
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+  border-left-color: #FFC107; 
+}
+
+.sidebar_icon { display: flex; align-items: center; }
+.sidebar_iconActive { color: #FFC107; }
+.sidebar_iconInactive { color: #64748b; }
+
+.sidebar_label { font-size: 0.875rem; font-weight: 700; }
+.sidebar_subLabel { font-size: 0.75rem; }
+
+.sidebar_subActive { color: #bfdbfe; }
+.sidebar_subInactive { color: #94a3b8; }
+
+.sidebar_dateArea { 
+  padding: 1rem; 
+  border-top: 1px solid #e2e8f0; 
+  background: white; 
+}
+
+.sidebar_dateTag { 
+  font-size: 0.75rem; 
+  color: #64748b; 
+  font-weight: 500; 
+  background: #f1f5f9; 
+  padding: 0.5rem; 
+  border-radius: 0.5rem; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 0.5rem; 
+}
+</file>
+
+<file path="src/components/layout/Topbar.jsx">
+/**
+ * @file Topbar.jsx
+ * @description Componente que renderiza la barra superior de navegación.
+ */
+import React from 'react';
+import styles from './Topbar.module.css';
+
+const Topbar = () => (
+  <header className={styles.topbar_header}>
+    <div className={styles.topbar_left}>
+      <h1 className={styles.topbar_title}>SISTEMA DE GESTIÓN DE MANTENIMIENTO</h1>
+    </div>
+    <div className={styles.topbar_right}>
+      <p className={styles.topbar_company}>SOLQUIVEN</p>
+      <p className={styles.topbar_subtitle}>Soluciones Químicas</p>
+    </div>
+  </header>
+);
+
+export default Topbar;
+</file>
+
+<file path="src/components/layout/Topbar.module.css">
+.topbar_header { 
+  background-color: #003882; 
+  color: white; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 1.5rem; 
+  height: 4rem; 
+  border-bottom: 4px solid #FFC107; 
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+  flex-shrink: 0; 
+}
+
+.topbar_title { 
+  font-size: 1.125rem; 
+  font-weight: 700; 
+  letter-spacing: 0.05em; 
+}
+
+@media (min-width: 768px) { 
+  .topbar_title { 
+    font-size: 1.25rem; 
+  } 
+}
+
+.topbar_company { 
+  font-weight: 700; 
+  font-size: 0.875rem; 
+  letter-spacing: 0.1em; 
+  color: #FFC107; 
+  text-align: right; 
+  margin-bottom: 2px;
+}
+
+.topbar_subtitle { 
+  font-size: 0.75rem; 
+  color: #bfdbfe; 
+  text-align: right; 
+}
+</file>
+
+<file path="src/components/machines/MachineDetails.jsx">
+/**
+ * @file MachineDetails.jsx
+ * @description Muestra el detalle técnico y listado de fallas funcionales de una máquina en específico.
+ */
+import React, { useState } from 'react';
+import { ChevronLeft, Wrench, AlertCircle, ChevronDown, Activity } from 'lucide-react';
+import styles from './MachineDetails.module.css';
+
+const MachineDetails = ({ machine, onBack }) => {
+  const [openFailureId, setOpenFailureId] = useState(null);
+
+  const toggleFailure = (id) => {
+    setOpenFailureId(openFailureId === id ? null : id);
+  };
+
+  if (!machine) return null;
+
+  return (
+    <div className={styles.details_container}>
+      <div className={styles.details_header}>
+        <button onClick={onBack} className={styles.details_backBtn}>
+          <ChevronLeft size={20} />
+        </button>
+        <div>
+          <h2 className={styles.details_title}>
+             Ficha Técnica: <span className={styles.details_titleHighlight}>{machine.code}</span>
+          </h2>
+          <p className={styles.details_subtitle}>{machine.name}</p>
+        </div>
+      </div>
+
+      <div className={styles.details_grid}>
+        
+        {/* Columna Izquierda: Datos Técnicos */}
+        <div className={styles.details_infoCard}>
+          <h3 className={styles.details_infoTitle}>
+            <Wrench size={18} className={styles.details_infoIcon}/> Especificaciones Técnicas
+          </h3>
+          
+          <div className={styles.details_infoBox}>
+            <div className={styles.details_infoHighlight}>
+               <p className={styles.details_label}>Empresa</p>
+               <p className={styles.details_valueBold}>SOLQUIVEN C.A.</p>
+            </div>
+
+            <div className={styles.details_grid2}>
+               <div>
+                  <p className={styles.details_label}>Marca</p>
+                  <p className={styles.details_value}>{machine.brand}</p>
+               </div>
+               <div>
+                  <p className={styles.details_label}>Modelo</p>
+                  <p className={styles.details_value}>{machine.model}</p>
+               </div>
+            </div>
+
+            <div className={styles.details_grid2}>
+               <div>
+                  <p className={styles.details_label}>Serial</p>
+                  <p className={styles.details_value}>{machine.serials}</p>
+               </div>
+               <div>
+                  <p className={styles.details_label}>Costo Aprox.</p>
+                  <p className={styles.details_value}>{machine.cost}</p>
+               </div>
+            </div>
+
+            <div>
+              <p className={styles.details_label}>Distribuidor</p>
+              <p className={styles.details_value} style={{color:'#475569'}}>{machine.distributor}</p>
+            </div>
+
+            <div style={{borderTop:'1px solid #f1f5f9', paddingTop:'0.75rem'}}>
+              <p className={styles.details_label}>Características</p>
+              <p className={styles.details_featureBox}>{machine.characteristics}</p>
+            </div>
+
+            <div>
+              <p className={styles.details_label}>Funcionamiento Principal</p>
+              <p className={styles.details_descBox}>"{machine.description}"</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* Columna Derecha: Fallas Funcionales */}
+        <div className={styles.details_failuresCard}>
+          <div className={styles.details_failuresHeader}>
+            <h3 className={styles.details_failuresTitle}>
+              <AlertCircle className={styles.details_infoIcon} size={20} />
+              Fallas Funcionales
+            </h3>
+            <p className={styles.details_failuresSub}>Seleccione una falla para ver su Modo, Causa y Efecto.</p>
+          </div>
+          
+          <div className={styles.details_failuresList}>
+            {machine.functionalFailures.map((failure) => {
+              const isOpen = openFailureId === failure.id;
+              
+              return (
+                <div key={failure.id} className={styles.acc_item}>
+                  
+                  {/* Botón del Acordeón */}
+                  <button 
+                    onClick={() => toggleFailure(failure.id)}
+                    className={`${styles.acc_btn} ${isOpen ? styles.acc_btnOpen : styles.acc_btnClosed}`}
+                  >
+                    <div className={styles.acc_iconWrapper}>
+                       <div className={`${styles.acc_iconCircle} ${isOpen ? styles.acc_iconCircleOpen : styles.acc_iconCircleClosed}`}>
+                          <Activity size={16} />
+                       </div>
+                    </div>
+                    
+                    <div className={styles.acc_contentPreview}>
+                       <div className={styles.acc_idTag}>Falla {failure.id}</div>
+                       <div className={`${styles.acc_descPreview} ${isOpen ? styles.acc_descPreviewOpen : styles.acc_descPreviewClosed}`}>
+                          {failure.description}
+                       </div>
+                    </div>
+
+                    <div className={`${styles.acc_arrow} ${isOpen ? styles.acc_arrowOpen : ''}`}>
+                       <ChevronDown size={20} />
+                    </div>
+                  </button>
+
+                  {/* Cuerpo Desplegado */}
+                  <div className={`${styles.acc_body} ${isOpen ? styles.acc_bodyOpen : styles.acc_bodyClosed}`}>
+                    <div className={styles.acc_bodyInner}>
+                       
+                       <div className={styles.acc_funcBox}>
+                          <p className={styles.details_label}>Función del Equipo Afectada</p>
+                          <p className={styles.acc_funcText}>"{failure.functionDesc}"</p>
+                       </div>
+
+                       <div className={styles.acc_detailGrid}>
+                         {/* MODO */}
+                         <div className={styles.acc_detailSection}>
+                           <span className={`${styles.acc_detailLabel} ${styles.acc_labelMode}`}>Modo de Falla</span>
+                           <ul className={styles.acc_ul}>
+                             {failure.mode.map((item, i) => <li key={i} className={styles.acc_li}>{item}</li>)}
+                           </ul>
+                         </div>
+
+                         {/* CAUSA */}
+                         <div className={styles.acc_detailSection}>
+                           <span className={`${styles.acc_detailLabel} ${styles.acc_labelCause}`}>Causa de la Falla</span>
+                           <ul className={styles.acc_ul}>
+                             {failure.cause.map((item, i) => <li key={i} className={styles.acc_li}>{item}</li>)}
+                           </ul>
+                         </div>
+
+                         {/* EFECTO */}
+                         <div className={styles.acc_detailSection}>
+                           <span className={`${styles.acc_detailLabel} ${styles.acc_labelEffect}`}>Efecto de la Falla</span>
+                           <ul className={styles.acc_ul}>
+                             {failure.effect.map((item, i) => <li key={i} className={styles.acc_li}>{item}</li>)}
+                           </ul>
+                         </div>
+                       </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default MachineDetails;
+</file>
+
+<file path="src/components/machines/MachineDetails.module.css">
+.details_container { display: flex; flex-direction: column; height: 100%; animation: fadeIn 0.3s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateX(10px); } to { opacity: 1; transform: translateX(0); } }
+
+.details_header { margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem; }
+
+.details_backBtn { 
+  padding: 0.5rem; 
+  background: white; 
+  border-radius: 50%; 
+  border: 1px solid #e2e8f0; 
+  color: #475569; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  transition: all 0.2s; 
+  flex-shrink: 0; 
+}
+.details_backBtn:hover { background: #f1f5f9; color: #003882; }
+
+.details_title { font-size: 1.25rem; font-weight: 700; color: #003882; display: flex; align-items: center; gap: 0.5rem; }
+@media (min-width: 768px) { .details_title { font-size: 1.5rem; } }
+
+.details_titleHighlight { color: #00b0f0; }
+.details_subtitle { font-size: 0.875rem; color: #64748b; }
+
+.details_grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; flex: 1; min-height: 0; }
+@media (min-width: 1024px) { .details_grid { grid-template-columns: 4fr 8fr; } }
+
+/* Columna Izquierda (Info) */
+.details_infoCard { 
+  background: white; 
+  border-radius: 0.75rem; 
+  border: 1px solid #e2e8f0; 
+  border-top: 4px solid #FFC107; 
+  padding: 1.25rem; 
+  display: flex; 
+  flex-direction: column; 
+  overflow-y: auto; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+
+.details_infoTitle { 
+  font-size: 1rem; 
+  font-weight: 700; 
+  color: #003882; 
+  border-bottom: 1px solid #f1f5f9; 
+  padding-bottom: 0.5rem; 
+  margin-bottom: 1rem; 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+  flex-shrink: 0; 
+}
+
+.details_infoIcon { color: #FFC107; }
+.details_infoBox { display: flex; flex-direction: column; gap: 1rem; }
+.details_infoHighlight { background: #f8fafc; padding: 0.75rem; border-radius: 0.5rem; border: 1px solid #f1f5f9; }
+
+.details_label { 
+  font-size: 0.65rem; 
+  font-weight: 700; 
+  color: #94a3b8; 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em; 
+  margin-bottom: 0.25rem; 
+}
+
+.details_value { font-size: 0.875rem; color: #334155; font-weight: 500; }
+.details_valueBold { font-size: 0.875rem; font-weight: 700; color: #003882; }
+.details_grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+.details_featureBox { 
+  background: #f0f7ff; 
+  padding: 0.5rem; 
+  border-radius: 0.25rem; 
+  border: 1px solid #cce7ff; 
+  font-size: 0.875rem; 
+  color: #334155; 
+  line-height: 1.4; 
+}
+
+.details_descBox { 
+  font-size: 0.875rem; 
+  color: #475569; 
+  line-height: 1.4; 
+  font-style: italic; 
+  border-left: 4px solid #00b0f0; 
+  padding-left: 0.5rem; 
+}
+
+/* Columna Derecha (Fallas - Acordeón Plano) */
+.details_failuresCard { 
+  background: white; 
+  border-radius: 0.75rem; 
+  border: 1px solid #e2e8f0; 
+  border-top: 4px solid #003882; 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 0; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+
+.details_failuresHeader { padding: 1rem; border-bottom: 1px solid #f1f5f9; background: #f8fafc; flex-shrink: 0; }
+.details_failuresTitle { font-size: 1.125rem; font-weight: 700; color: #003882; display: flex; align-items: center; gap: 0.5rem; }
+.details_failuresSub { font-size: 0.75rem; color: #64748b; margin-top: 0.25rem; }
+
+/* FIX: Prevenir encogimiento de la lista y habilitar scroll */
+.details_failuresList { padding: 1rem; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
+
+/* Item del Acordeón */
+.acc_item { 
+  border: 1px solid #e2e8f0; 
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+  background: white; 
+  flex-shrink: 0; 
+  display: flex;
+  flex-direction: column;
+}
+
+.acc_btn { 
+  width: 100%; 
+  text-align: left; 
+  display: flex; 
+  align-items: center; 
+  transition: all 0.3s ease; 
+  border-left: 4px solid transparent; 
+  min-height: 4.5rem; 
+  flex-shrink: 0;
+}
+
+.acc_btnClosed { background: #f8fafc; }
+.acc_btnClosed:hover { background: #f1f5f9; }
+.acc_btnOpen { background: linear-gradient(90deg, #f0f7ff 0%, #fffbeb 100%); border-left-color: #FFC107; }
+
+.acc_iconWrapper { 
+  width: 3.5rem; 
+  min-height: 4.5rem; 
+  flex-shrink: 0; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-right: 1px solid rgba(226, 232, 240, 0.5); 
+}
+
+.acc_iconCircle { 
+  width: 2rem; 
+  height: 2rem; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  transition: background 0.3s; 
+}
+.acc_iconCircleClosed { background: #e2e8f0; color: #64748b; }
+.acc_iconCircleOpen { background: white; color: #003882; border: 1px solid #FFC107; box-shadow: 0 0 5px rgba(255,193,7,0.3); }
+
+.acc_contentPreview { flex: 1; padding: 0.75rem 1rem; display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+.acc_idTag { font-size: 0.65rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; margin-bottom: 0.125rem; letter-spacing: 0.05em; }
+.acc_descPreview { font-size: 0.875rem; font-weight: 600; line-height: 1.25; padding-right: 1rem; white-space: normal; }
+.acc_descPreviewClosed { color: #475569; }
+.acc_descPreviewOpen { color: #003882; }
+
+.acc_arrow { width: 3rem; min-height: 4.5rem; flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: transform 0.3s; color: #94a3b8; }
+.acc_arrowOpen { transform: rotate(180deg); color: #003882; }
+
+/* Contenido Desplegado del Acordeón */
+.acc_body { transition: all 0.3s ease-in-out; overflow: hidden; }
+.acc_bodyClosed { max-height: 0; opacity: 0; border-top-width: 0; }
+.acc_bodyOpen { max-height: 1500px; opacity: 1; border-top: 1px solid #e2e8f0; }
+.acc_bodyInner { padding: 1.25rem; background: white; display: flex; flex-direction: column; gap: 1.25rem; }
+
+.acc_funcBox { background: #f8fafc; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #f1f5f9; }
+.acc_funcText { font-size: 0.875rem; color: #475569; font-style: italic; }
+
+.acc_detailGrid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+.acc_detailSection { display: flex; flex-direction: column; }
+.acc_detailLabel { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; padding: 0.25rem 0.5rem; border-radius: 0.25rem; width: fit-content; display: flex; align-items: center; gap: 0.25rem;}
+
+.acc_labelMode { color: #003882; background: #eff6ff; border: 1px solid #bfdbfe; }
+.acc_labelCause { color: #d97706; background: #fef3c7; border: 1px solid #fde68a; }
+.acc_labelEffect { color: #dc2626; background: #fef2f2; border: 1px solid #fecaca; }
+
+.acc_ul { list-style-type: disc; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; }
+.acc_li { font-size: 0.875rem; color: #334155; line-height: 1.4; }
+</file>
+
+<file path="src/components/machines/MachineList.jsx">
+/**
+ * @file MachineList.jsx
+ * @description Renderiza el listado principal de máquinas y proporciona herramientas de búsqueda/filtro.
+ */
+import React, { useState } from 'react';
+import { Search, Plus, Filter, ArrowUp, Database } from 'lucide-react';
+import { machinesData } from '../../data/machinesData';
+import styles from './MachineList.module.css';
+
+const MachineList = ({ onSelectMachine }) => {
+  const [searchTerm, setSearchTerm] = useState('');
+  
+  const filteredMachines = machinesData.filter(m => 
+    m.code.toLowerCase().includes(searchTerm.toLowerCase()) || 
+    m.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Función para determinar la clase CSS según el estado
+  const getStatusClass = (status) => {
+    // Normalizamos el texto (minúsculas y sin acentos) para evitar errores de escritura
+    const normalizedStatus = status.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    
+    if (normalizedStatus.includes('inoperativo')) return styles.list_statusGray;
+    if (normalizedStatus.includes('danado') || normalizedStatus.includes('malo')) return styles.list_statusRed;
+    if (normalizedStatus.includes('operativo')) return styles.list_statusOk;
+    
+    return styles.list_statusGray; // Por defecto
+  };
+
+  return (
+    <div className={styles.list_container}>
+      <div className={styles.list_header}>
+        <h2 className={styles.list_title}>
+          <Database className={styles.list_titleIcon} size={28} />
+          Inventario de Máquinas (SOLQUIVEN)
+        </h2>
+      </div>
+
+      <div className={styles.list_card}>
+        <div className={styles.list_toolbar}>
+          <div className={styles.list_searchWrap}>
+            <Search className={styles.list_searchIcon} size={18} />
+            <input 
+              type="text" 
+              placeholder="Buscar máquina por Código, Nombre..." 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className={styles.list_searchInput}
+            />
+          </div>
+          <div className={styles.list_actions}>
+            <button className={styles.list_btnPrimary}>
+              Nueva Máquina <Plus size={16} />
+            </button>
+            <button className={styles.list_btnSecondary}>
+              Filtrar <Filter size={16} />
+            </button>
+          </div>
+        </div>
+
+        <div className={styles.list_tableWrap}>
+          <table className={styles.list_table}>
+            <thead>
+              <tr>
+                <th className={styles.list_th}>Código <ArrowUp size={12} style={{display:'inline', marginLeft:'4px', color:'#94a3b8'}} /></th>
+                <th className={styles.list_th}>Descripción del Equipo</th>
+                <th className={styles.list_th}>Marca / Modelo</th>
+                <th className={styles.list_th}>Ubicación</th>
+                <th className={styles.list_th}>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredMachines.map((machine) => (
+                <tr key={machine.id} onClick={() => onSelectMachine(machine)} className={styles.list_tr}>
+                  <td className={styles.list_td}><span className={styles.list_tdBold}>{machine.code}</span></td>
+                  <td className={styles.list_td} style={{fontWeight:'500'}}>{machine.name}</td>
+                  <td className={styles.list_td}><span className={styles.list_tdSub}>{machine.brand} ({machine.model})</span></td>
+                  <td className={styles.list_td}><span className={styles.list_tdSub}>{machine.area}</span></td>
+                  <td className={styles.list_td}>
+                    <span className={getStatusClass(machine.status)}>{machine.status}</span>
+                  </td>
+                </tr>
+              ))}
+              {filteredMachines.length === 0 && (
+                 <tr>
+                 <td colSpan="5" className={styles.list_td} style={{textAlign:'center', padding:'2rem', color:'#94a3b8'}}>
+                   No se encontraron máquinas con ese criterio de búsqueda.
+                 </td>
+               </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MachineList;
+</file>
+
+<file path="src/components/machines/MachineList.module.css">
+.list_container {
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+}
+
+.list_header { 
+  margin-bottom: 1.5rem; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.list_title { 
+  font-size: 1.25rem; 
+  font-weight: 700; 
+  color: #003882; 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+}
+
+@media (min-width: 768px) { 
+  .list_title { font-size: 1.5rem; } 
+}
+
+.list_titleIcon { 
+  color: #FFC107; 
+}
+
+.list_card { 
+  background: white; 
+  border-radius: 0.75rem; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+  border: 1px solid #e2e8f0; 
+  display: flex; 
+  flex-direction: column; 
+  flex: 1; 
+  overflow: hidden; 
+}
+
+.list_toolbar { 
+  padding: 1rem; 
+  border-bottom: 1px solid #f1f5f9; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.75rem; 
+  background: #f8fafc; 
+}
+
+@media (min-width: 768px) { 
+  .list_toolbar { 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+  } 
+}
+
+.list_searchWrap { 
+  position: relative; 
+  width: 100%; 
+  max-width: 24rem; 
+}
+
+.list_searchIcon { 
+  position: absolute; 
+  left: 0.75rem; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  color: #94a3b8; 
+}
+
+.list_searchInput { 
+  width: 100%; 
+  padding: 0.5rem 1rem 0.5rem 2.5rem; 
+  border-radius: 0.5rem; 
+  border: 1px solid #cbd5e1; 
+  font-size: 0.875rem; 
+  outline: none; 
+  transition: border-color 0.2s; 
+}
+
+.list_searchInput:focus { 
+  border-color: #003882; 
+  box-shadow: 0 0 0 2px rgba(0,56,130,0.1); 
+}
+
+.list_actions { 
+  display: flex; 
+  gap: 0.5rem; 
+}
+
+.list_btnPrimary { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+  padding: 0.5rem 1rem; 
+  background: #003882; 
+  color: white; 
+  border-radius: 0.5rem; 
+  font-size: 0.875rem; 
+  font-weight: 500; 
+  border: 1px solid #003882; 
+  transition: background 0.2s; 
+  cursor: pointer;
+}
+
+.list_btnPrimary:hover { 
+  background: #00285e; 
+}
+
+.list_btnSecondary { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+  padding: 0.5rem 1rem; 
+  background: white; 
+  color: #003882; 
+  border-radius: 0.5rem; 
+  font-size: 0.875rem; 
+  font-weight: 500; 
+  border: 1px solid #cbd5e1; 
+  transition: background 0.2s; 
+  cursor: pointer;
+}
+
+.list_btnSecondary:hover { 
+  background: #f8fafc; 
+}
+
+.list_tableWrap { 
+  flex: 1; 
+  overflow: auto; 
+}
+
+.list_table { 
+  width: 100%; 
+  text-align: left; 
+  border-collapse: collapse; 
+  min-width: 800px; 
+}
+
+.list_th { 
+  padding: 0.75rem 1rem; 
+  font-size: 0.75rem; 
+  font-weight: 700; 
+  color: #475569; 
+  text-transform: uppercase; 
+  background: #f8fafc; 
+  border-bottom: 2px solid #e2e8f0; 
+  position: sticky; 
+  top: 0; 
+  z-index: 10; 
+}
+
+.list_tr { 
+  transition: background-color 0.2s; 
+  cursor: pointer; 
+  border-bottom: 1px solid #f1f5f9; 
+}
+
+.list_tr:hover { 
+  background-color: #f0f7ff; 
+}
+
+.list_td { 
+  padding: 1rem; 
+  font-size: 0.875rem; 
+  color: #334155; 
+}
+
+.list_tdBold { 
+  font-weight: 700; 
+  color: #0f172a; 
+}
+
+.list_tr:hover .list_tdBold { 
+  color: #003882; 
+}
+
+.list_tdSub { 
+  color: #64748b; 
+}
+
+/* Estados - Operativo (Verde) */
+.list_statusOk { 
+  display: inline-flex; 
+  padding: 0.25rem 0.625rem; 
+  font-size: 0.75rem; 
+  font-weight: 700; 
+  border-radius: 9999px; 
+  background: #dcfce7; 
+  color: #15803d; 
+  border: 1px solid #bbf7d0; 
+}
+
+/* Estados - Inoperativo (Gris) */
+.list_statusGray { 
+  display: inline-flex; 
+  padding: 0.25rem 0.625rem; 
+  font-size: 0.75rem; 
+  font-weight: 700; 
+  border-radius: 9999px; 
+  background: #f1f5f9; 
+  color: #64748b; 
+  border: 1px solid #e2e8f0; 
+}
+
+/* Estados - Dañado (Rojo) */
+.list_statusRed { 
+  display: inline-flex; 
+  padding: 0.25rem 0.625rem; 
+  font-size: 0.75rem; 
+  font-weight: 700; 
+  border-radius: 9999px; 
+  background: #fee2e2; 
+  color: #b91c1c; 
+  border: 1px solid #fca5a5; 
+}
+</file>
+
+<file path="src/components/maintenance/MaintenancePlan.jsx">
+/**
+ * @file MaintenancePlan.jsx
+ * @description Muestra el plan anual de mantenimiento preventivo tabulado, con alertas por fechas.
+ */
+import React, { useState } from 'react';
+import { Clock } from 'lucide-react';
+import { machinesData } from '../../data/machinesData';
+import styles from './MaintenancePlan.module.css';
+
+const MaintenancePlan = () => {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const machine = machinesData[selectedIndex];
+
+  const getStatusClasses = (days) => {
+    if (days <= 3) return { circ: styles.urg_red_circ, text: styles.urg_red_text, badge: styles.urg_red_badge };
+    if (days <= 7) return { circ: styles.urg_amb_circ, text: styles.urg_amb_text, badge: styles.urg_amb_badge };
+    return { circ: styles.urg_grn_circ, text: styles.urg_grn_text, badge: styles.urg_grn_badge };
+  };
+
+  const getDaysText = (days) => {
+    if (days === 0) return "Hoy";
+    if (days === 1) return "Falta 1 día";
+    return `Faltan ${days} días`;
+  };
+
+  const getBadgeText = (days) => {
+    if (days <= 3) return "¡Urgente!";
+    if (days <= 7) return "Próximo";
+    return "A Tiempo";
+  };
+
+  return (
+    <div className={styles.mtto_container}>
+      
+      {/* Combobox estilizado con CSS */}
+      <div className={styles.mtto_selectContainer}>
+        <label htmlFor="machineSelect" className={styles.mtto_selectLabel}>
+          Seleccionar Equipo:
+        </label>
+        <select 
+          id="machineSelect"
+          className={styles.mtto_selectInput}
+          value={selectedIndex} 
+          onChange={(e) => setSelectedIndex(Number(e.target.value))}
+        >
+          {machinesData.map((m, index) => (
+            <option key={m.code || index} value={index}>
+              {m.name} ({m.code})
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className={styles.mtto_card}>
+        {/* Cabecera Formal del Documento */}
+        <div className={styles.mtto_docHeader}>
+            <div className={styles.mtto_docTitle}>
+                PROGRAMA DE MANTENIMIENTO PREVENTIVO ANUAL
+            </div>
+            
+            <div className={styles.mtto_docRow}>
+                <div className={`${styles.mtto_docCol} ${styles.mtto_docColMain}`}>
+                    <span className={styles.mtto_docLabel}>Empresa:</span>
+                    <p className={styles.mtto_docValue}>MANTENIMIENTO - SOLQUIVEN C.A.</p>
+                </div>
+                <div className={`${styles.mtto_docCol} ${styles.mtto_docColSide}`}>
+                    <span className={styles.mtto_docLabel}>Fecha de Emisión:</span>
+                    <p className={styles.mtto_docValueDark}>03-08-2026</p>
+                </div>
+            </div>
+
+            <div className={`${styles.mtto_docRow} ${styles.mtto_docBgGray}`}>
+                <div className={`${styles.mtto_docCol} ${styles.mtto_docColMain} ${styles.mtto_docBgGray}`}>
+                    <span className={styles.mtto_docLabel}>Nombre del Equipo:</span>
+                    <p className={styles.mtto_docValueDark} style={{textTransform: 'capitalize'}}>
+                      {machine.name.toLowerCase()}
+                    </p>
+                </div>
+                <div className={`${styles.mtto_docCol} ${styles.mtto_docColSide} ${styles.mtto_docBgGray}`}>
+                    <span className={styles.mtto_docLabel}>Código:</span>
+                    <p className={styles.mtto_docValueDark}>{machine.code}</p>
+                </div>
+            </div>
+        </div>
+
+        {/* Tabla Formal de Tareas (Con scroll en móvil) */}
+        <div className={styles.mtto_tableWrapper}>
+           <div className={styles.mtto_tableBorder}>
+             <table className={styles.mtto_table}>
+               <thead>
+                 <tr>
+                   <th className={styles.mtto_th} style={{width:'20%'}}>Encargado de Mtto.</th>
+                   <th className={styles.mtto_th} style={{width:'45%'}}>Actividades</th>
+                   <th className={`${styles.mtto_th} ${styles.mtto_thCenter}`} style={{width:'15%'}}>Frecuencia</th>
+                   <th className={`${styles.mtto_th} ${styles.mtto_thCenter} ${styles.mtto_thAccent}`} style={{width:'20%'}}>Estado (Días Restantes)</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 {machine.maintenancePlan.map((task) => {
+                   const status = getStatusClasses(task.daysRemaining);
+                   
+                   return (
+                     <tr key={task.id} className={styles.mtto_tr}>
+                       <td className={styles.mtto_td} style={{fontWeight:'500'}}>{task.personnel}</td>
+                       <td className={styles.mtto_td}>{task.task}</td>
+                       <td className={`${styles.mtto_td} ${styles.mtto_tdBoldCenter}`}>{task.frequency}</td>
+                       <td className={`${styles.mtto_td} ${styles.mtto_tdCenter}`}>
+                          <div className={styles.mtto_daysBox}>
+                              <div className={styles.mtto_daysRow}>
+                                  <div className={`${styles.mtto_iconCirc} ${status.circ}`}>
+                                      <Clock size={12} />
+                                  </div>
+                                  <span className={`${styles.mtto_daysText} ${status.text}`}>
+                                      {getDaysText(task.daysRemaining)}
+                                  </span>
+                              </div>
+                              <span className={`${styles.mtto_badge} ${status.badge}`}>
+                                  {getBadgeText(task.daysRemaining)}
+                              </span>
+                          </div>
+                       </td>
+                     </tr>
+                   )
+                 })}
+               </tbody>
+             </table>
+           </div>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default MaintenancePlan;
+</file>
+
+<file path="src/components/maintenance/MaintenancePlan.module.css">
+.mtto_container { display: flex; flex-direction: column; height: 100%; animation: fadeInUp 0.3s ease-out; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* --- NUEVO: Estilos del Combobox de Selección --- */
+.mtto_selectContainer {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column; /* Apilado en teléfonos */
+  gap: 0.5rem;
+}
+@media (min-width: 640px) {
+  .mtto_selectContainer {
+    flex-direction: row; /* Lado a lado en PC */
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.mtto_selectLabel {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.mtto_selectInput {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #cbd5e1;
+  background-color: white;
+  font-size: 0.875rem;
+  color: #334155;
+  cursor: pointer;
+  min-width: 250px;
+  outline: none;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.mtto_selectInput:focus {
+  border-color: #003882;
+  box-shadow: 0 0 0 3px rgba(0, 56, 130, 0.15);
+}
+/* ------------------------------------------------ */
+
+.mtto_card { 
+  background: white; 
+  border-radius: 0.75rem; 
+  border: 1px solid #e2e8f0; 
+  border-top: 4px solid #003882; 
+  display: flex; 
+  flex-direction: column; 
+  flex: 1; 
+  overflow: hidden; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+
+/* Cabecera del Documento */
+.mtto_docHeader { border-bottom: 1px solid #cbd5e1; }
+.mtto_docTitle { background: #f1f5f9; text-align: center; padding: 0.75rem; border-bottom: 1px solid #cbd5e1; font-size: 1rem; font-weight: 900; color: #1e293b; text-transform: uppercase; letter-spacing: 0.05em; }
+@media (min-width: 768px) { .mtto_docTitle { font-size: 1.125rem; } }
+
+.mtto_docRow { display: flex; flex-direction: column; border-bottom: 1px solid #cbd5e1; }
+@media (min-width: 640px) { .mtto_docRow { flex-direction: row; } }
+
+.mtto_docCol { padding: 0.75rem; background: white; }
+.mtto_docColMain { flex: 1; }
+.mtto_docColSide { width: 100%; }
+@media (min-width: 640px) {
+    .mtto_docColMain { border-right: 1px solid #cbd5e1; border-bottom: none; }
+    .mtto_docColSide { width: 16rem; }
+}
+
+.mtto_docBgGray { background: #f8fafc; }
+.mtto_docLabel { font-size: 0.7rem; font-weight: 700; color: #64748b; text-transform: uppercase; }
+.mtto_docValue { font-size: 0.875rem; font-weight: 700; color: #003882; }
+.mtto_docValueDark { color: #1e293b; font-weight: 700; font-size: 0.875rem; }
+
+/* Tabla Formal */
+/* MODIFICADO: overflow-x: auto permite scroll horizontal en móviles sin deformar la tarjeta */
+.mtto_tableWrapper { 
+  flex: 1; 
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; /* Suavidad en el scroll para iOS */
+  padding: 1rem; 
+  background: white; 
+}
+.mtto_tableBorder { border-radius: 0.5rem; border: 1px solid #cbd5e1; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+.mtto_table { width: 100%; text-align: left; border-collapse: collapse; min-width: 900px; /* <- Esto forza que en móviles aparezca el scroll horizontal */ }
+
+.mtto_th { padding: 0.75rem 1rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; background: #003882; color: white; border-right: 1px solid #1e40af; border-bottom: 2px solid #00285e; }
+.mtto_thCenter { text-align: center; }
+.mtto_thAccent { color: #FFC107; }
+
+.mtto_tr { background: white; transition: background 0.2s; border-bottom: 1px solid #e2e8f0; }
+.mtto_tr:hover { background: #f0f7ff; }
+
+.mtto_td { padding: 0.875rem 1rem; font-size: 0.875rem; color: #334155; border-right: 1px solid #e2e8f0; vertical-align: top; line-height: 1.4; }
+.mtto_tdBoldCenter { font-weight: 700; text-align: center; background: #f8fafc; color: #003882; vertical-align: middle; }
+.mtto_tdCenter { text-align: center; vertical-align: middle; }
+
+/* Indicador de Días */
+.mtto_daysBox { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.375rem; }
+.mtto_daysRow { display: flex; align-items: center; gap: 0.375rem; }
+.mtto_iconCirc { width: 1.5rem; height: 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid; }
+.mtto_daysText { font-size: 0.875rem; font-weight: 900; }
+.mtto_badge { padding: 0.125rem 0.5rem; border-radius: 0.25rem; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; border: 1px solid; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+
+/* Colores por urgencia */
+.urg_red_circ { background: #fef2f2; border-color: #fecaca; color: #ef4444; }
+.urg_red_text { color: #dc2626; }
+.urg_red_badge { background: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
+
+.urg_amb_circ { background: #fffbeb; border-color: #fde68a; color: #f59e0b; }
+.urg_amb_text { color: #d97706; }
+.urg_amb_badge { background: #fef3c7; color: #b45309; border-color: #fcd34d; }
+
+.urg_grn_circ { background: #f0fdf4; border-color: #bbf7d0; color: #22c55e; }
+.urg_grn_text { color: #16a34a; }
+.urg_grn_badge { background: #dcfce7; color: #15803d; border-color: #86efac; }
+</file>
+
+<file path="src/data/machinesData.js">
+/**
+ * @file machinesData.js
+ * @description Base de datos centralizada que almacena la información técnica, 
+ * fallas funcionales y planes de mantenimiento de los equipos de la planta.
+ */
+
+export const machinesData = [
+  {
+    id: 'M-LLEN',
+    code: 'LLEN-INLINE',
+    name: 'Maquina Llenadora Automática en Línea',
+    brand: 'INLINE FILLING SYSTEMS',
+    model: 'S/I',
+    serials: '22300 / 22285',
+    distributor: 'Inline Filling Systems (Venice, FL, USA)',
+    phone: 'N/D',
+    cost: '28.000 $ (aprox.)',
+    characteristics: '20-100 PSI, émbolo 32 mm, stroke 160 mm, presión máx. 10 bar, Peso 300 kg (aprox.)',
+    area: 'Línea de Producción Principal',
+    status: 'Operativo',
+    criticality: 'Alta',
+    description: 'Dosificado continuo de líquidos en envases indexados bajo los cabezales de llenado.',
+    
+    functionalFailures: [
+      {
+        id: '1A',
+        functionDesc: 'Dosificar y llenar los envases con el producto fabricado, garantizando el volumen o peso exacto y cumpliendo con la velocidad de la línea de producción.',
+        description: 'No dispensa ningún producto (Pérdida total de la función por falla en la bomba de impulsión, boquillas obstruidas o falla eléctrica).',
+        mode: [
+          'Obstrucción total de la boquilla del cabezal de llenado.',
+          'Falla de la bomba de diafragma neumático (sin succión ni impulsión de producto).'
+        ],
+        cause: [
+          'Acumulación de residuos secos o cristalizados de producto en el interior de la boquilla por limpieza CIP deficiente.',
+          'Rotura de la membrana del diafragma por fatiga del material y presión de aire de accionamiento excesiva.'
+        ],
+        effect: [
+          'Detención de la línea de llenado; envases avanzan vacíos a la siguiente estación.',
+          'Paro total del sistema de llenado y pérdida de producción.'
+        ]
+      },
+      {
+        id: '1B',
+        functionDesc: 'Dosificar y llenar los envases con el producto fabricado, garantizando el volumen o peso exacto y cumpliendo con la velocidad de la línea de producción.',
+        description: 'Llena los envases con un volumen o peso inexacto (por exceso o por defecto) debido a descalibración de los sensores o desgaste en los pistones/válvulas.',
+        mode: [
+          'Sub-llenado o sobre-llenado de los envases.',
+          'Variación de volumen entre los distintos cabezales en un mismo ciclo.'
+        ],
+        cause: [
+          'Descalibración del sistema de control de llenado por desgaste de las válvulas dosificadoras.',
+          'Desajuste en la sincronización de los pistones/cabezales de llenado múltiple.'
+        ],
+        effect: [
+          'Producto no conforme; reproceso o pérdida de producto por derrame en cabezal.',
+          'Inconsistencia de contenido neto entre envases; incumplimiento normativo de contenido declarado.'
+        ]
+      },
+      {
+        id: '1C',
+        functionDesc: 'Dosificar y llenar los envases con el producto fabricado, garantizando el volumen o peso exacto y cumpliendo con la velocidad de la línea de producción.',
+        description: 'Realiza el ciclo de llenado a una velocidad inferior a la requerida, generando cuellos de botella en la línea operativa.',
+        mode: [
+          'Falla del mecanismo de indexado (no posiciona el envase a tiempo bajo el cabezal).'
+        ],
+        cause: [
+          'Desgaste de la leva/servomotor del sistema de indexado por uso continuo.'
+        ],
+        effect: [
+          'Reducción del ritmo de llenado; cuello de botella en la línea de producción.'
+        ]
+      },
+      {
+        id: '2A',
+        functionDesc: 'Mantener la contención del producto durante la dosificación evitando derrames al medio ambiente o desperdicios.',
+        description: 'Fugas y goteos constantes de producto por las boquillas, mangueras o sellos deteriorados durante la operación.',
+        mode: [
+          'Desgaste o deterioro de los sellos y empaques del cabezal de llenado.'
+        ],
+        cause: [
+          'Envejecimiento de los materiales elastoméricos de los sellos por contacto prolongado con el producto.'
+        ],
+        effect: [
+          'Goteo continuo de producto durante la operación; desperdicio de materia prima y suciedad en el área.'
+        ]
+      },
+      {
+        id: '3A',
+        functionDesc: 'Manipular los envases manteniendo su integridad física y limpieza durante el ciclo de llenado.',
+        description: 'Atasca, rompe, abolla o mancha exteriormente el envase al momento de posicionarlo o durante la inyección del producto.',
+        mode: [
+          'Atasco de envases en el disco o mesa giratoria de alimentación.'
+        ],
+        cause: [
+          'Desalineación de las guías de envase por golpes, vibración o desajuste mecánico.'
+        ],
+        effect: [
+          'Paro de línea; acumulación de envases con riesgo de caída o rotura.'
+        ]
+      }
+    ],
+
+    maintenancePlan: [
+      {
+        id: 'mt1',
+        personnel: '1 operador',
+        task: 'Ejecutar limpieza profunda (CIP) y verificar ausencia de cristalización de producto en boquillas',
+        frequency: 'Semanal',
+        daysRemaining: 2
+      },
+      {
+        id: 'mt2',
+        personnel: '1 técnico, 1 analista de calidad',
+        task: 'Calibrar válvulas dosificadoras y verificar precisión del volumen de llenado',
+        frequency: 'Mensual',
+        daysRemaining: 15
+      },
+      {
+        id: 'mt3',
+        personnel: '2 técnicos mecánicos',
+        task: 'Sincronización y ajuste mecánico de la carrera de pistones dosificadores.',
+        frequency: 'Trimestral',
+        daysRemaining: 45
+      },
+      {
+        id: 'mt4',
+        personnel: '2 técnicos mecánicos',
+        task: 'Reemplazar preventivamente sellos, O-rings y empaquetaduras elastoméricas en los cabezales',
+        frequency: 'Semestral',
+        daysRemaining: 80
+      },
+      {
+        id: 'mt5',
+        personnel: '1 técnico mecánico',
+        task: 'Inspeccionar reguladores de presión de aire y verificar integridad de la membrana de la bomba',
+        frequency: 'Semanal',
+        daysRemaining: 5
+      },
+      {
+        id: 'mt6',
+        personnel: '2 técnicos mecánicos',
+        task: 'Reemplazar membrana de la bomba de diafragma neumático por fatiga de materia',
+        frequency: 'Anual',
+        daysRemaining: 210
+      },
+      {
+        id: 'mt7',
+        personnel: '1 técnico mecánico',
+        task: 'Limpiar, revisar desgaste y lubricar la leva/servomotor del mecanismo de indexado',
+        frequency: 'Mensual',
+        daysRemaining: 12
+      },
+      {
+        id: 'mt8',
+        personnel: '1 técnico mecánico',
+        task: 'Alinear, nivelar y ajustar las guías de envases en el disco/mesa giratoria de alimentación',
+        frequency: 'Mensual',
+        daysRemaining: 8
+      }
+    ]
+  },
+  {
+    id: 'M-ETIQ',
+    code: 'ETIQ-ME320',
+    name: 'Etiquetadora Automática de Envases',
+    brand: 'ESYBO',
+    model: 'ME-320',
+    serials: 'JM351059',
+    distributor: 'ESYBO (Esybo Venezuela)',
+    phone: 'N/D',
+    cost: '9.500 $ (aprox.)',
+    characteristics: '220 VAC, 60 Hz, 1,5 KW, Peso 220 kg (aprox.), 1,60 x 0,80 x 1,30 mts (aprox.)',
+    area: 'Línea de Producción Principal',
+    status: 'Inoperativo',
+    criticality: 'Alta',
+    description: 'Aplicación automática y sincronizada de etiquetas sobre los envases.',
+    
+    functionalFailures: [
+      {
+        id: '1A',
+        functionDesc: 'Aplicar etiquetas de forma automática en productos, envases o embalajes para su identificación, cumpliendo con los parámetros operativos requeridos.',
+        description: 'No aplica ninguna etiqueta (Pérdida total de la función - Máquina inoperativa).',
+        mode: [
+          'Rotura o desprendimiento de la cinta transportadora.',
+          'Falla electrónica en el sensor óptico de presencia de envase.'
+        ],
+        cause: [
+          'Desgaste y fatiga del material de la cinta transportadora por uso continuo sin mantenimiento preventivo programado.',
+          'Degradación o suciedad en la lente del sensor óptico, agravada por las fluctuaciones de tensión eléctrica reportadas en la planta.'
+        ],
+        effect: [
+          'El personal recurre al etiquetado manual para compensar la falla; aumenta el tiempo de proceso y el riesgo de error humano, sin que la causa raíz sea corregida.',
+          'La máquina no detecta el envase de forma automática; el personal continúa aplicando las etiquetas manualmente sin que la falla electrónica sea diagnosticada.'
+        ]
+      },
+      {
+        id: '1B',
+        functionDesc: 'Aplicar etiquetas de forma automática en productos, envases o embalajes para su identificación, cumpliendo con los parámetros operativos requeridos.',
+        description: 'Aplica etiquetas de forma deficiente (desalineadas, con arrugas, parcialmente adheridas o incompletas).',
+        mode: [
+          'Desalineación geométrica de las guías mecánicas de paso o de las barras de soporte del cabezal.',
+          'Desincronización electrónica entre la velocidad de la banda transportadora y la velocidad de dispensado del cabezal.',
+          'Presencia de burbujas de aire o arrugas.',
+          'Defecto en el lote del adhesivo de la etiqueta.',
+          'Error de calibración en el sensor de brecha de la etiqueta.'
+        ],
+        cause: [
+          'Desajuste mecánico de las guías por vibración y falta de calibración periódica.',
+          'Descalibración electrónica entre la banda transportadora y el cabezal dispensador por falta de mantenimiento del sistema de control.',
+          'Presencia de humedad o aire atrapado en el rollo de etiquetas durante su aplicación.',
+          'Adhesivo de baja calidad o vencido en el lote de etiquetas suministrado por el proveedor.',
+          'Descalibración del sensor de brecha por falta de ajuste periódico o suciedad acumulada.'
+        ],
+        effect: [
+          'Etiquetas mal posicionadas o arrugadas; producto no conforme para despacho.',
+          'Etiquetas desalineadas o mal aplicadas por descoordinación entre banda y cabezal.',
+          'Defecto estético en la etiqueta; reproceso o reetiquetado manual.',
+          'Etiquetas se despegan parcial o totalmente después de aplicadas.',
+          'Aplicación de etiquetas fuera de posición, dobles o faltantes.'
+        ]
+      },
+      {
+        id: '1C',
+        functionDesc: 'Aplicar etiquetas de forma automática en productos, envases o embalajes para su identificación, cumpliendo con los parámetros operativos requeridos.',
+        description: 'Aplica etiquetas a una velocidad inferior a la requerida por la línea de producción.',
+        mode: [
+          'Configuración errónea o alteración manual del potenciómetro de velocidad analógico por parte del personal de operación.',
+          'Pérdida de tensión en las correas.',
+          'Fricción excesiva en el eje del rodillo de arrastre principal.'
+        ],
+        cause: [
+          'Modificación manual del potenciómetro de velocidad por parte del operador sin procedimiento estandarizado.',
+          'Pérdida de tensión de las correas de arrastre por desgaste y falta de ajuste periódico.',
+          'Falta de lubricación programada en el eje del rodillo de arrastre principal.'
+        ],
+        effect: [
+          'Cuello de botella en la línea por reducción de la velocidad de etiquetado.',
+          'Reducción de la velocidad de arrastre; retrasa el ritmo de producción.',
+          'Desgaste acelerado del sistema de arrastre; reducción progresiva de velocidad.'
+        ]
+      },
+      {
+        id: '2A',
+        functionDesc: 'Mantener la integridad física del producto o envase durante el proceso de etiquetado.',
+        description: 'Daña, deforma o rompe el envase o producto al momento de aplicar la etiqueta.',
+        mode: [
+          'Presión excesiva ejercida por el rodillo aplicador o las guías de estabilización superior.',
+          'Atascamiento de envases en la banda transportadora.',
+          'Impacto del envase contra el cabezal.'
+        ],
+        cause: [
+          'Ajuste incorrecto de la presión del rodillo aplicador o las guías de estabilización superior.',
+          'Desalineación de la banda transportadora que provoca acumulación de envases.',
+          'Mala sincronización entre el avance del envase y la posición del cabezal aplicador.'
+        ],
+        effect: [
+          'Envases deformados o rotos al momento de aplicar la etiqueta.',
+          'Envases dañados o volcados por acumulación en la banda transportadora.',
+          'Envases golpeados o dañados al posicionarse bajo el cabezal.'
+        ]
+      },
+      {
+        id: '3A',
+        functionDesc: 'Operar de manera segura sin representar un riesgo eléctrico o mecánico para el operador.',
+        description: 'Presenta fallas que exponen al operador a riesgos de accidentes (ej. atrapamiento o choque eléctrico).',
+        mode: [
+          'Ausencia, retiro o fijación deficiente de las guardas.',
+          'Pérdida de aislamiento eléctrico.',
+          'Daño físico en el cable de puesta a tierra.'
+        ],
+        cause: [
+          'Retiro de las guardas de seguridad para tareas de limpieza o ajuste, sin reinstalación posterior.',
+          'Deterioro del aislamiento eléctrico de los componentes internos por antigüedad del equipo y falta de mantenimiento.',
+          'Corrosión o desconexión del cable de puesta a tierra por falta de inspección eléctrica periódica.'
+        ],
+        effect: [
+          'Riesgo de atrapamiento de manos u otras partes del cuerpo del operador.',
+          'Riesgo de choque eléctrico para el operador al manipular el equipo.',
+          'Pérdida de protección eléctrica; riesgo de choque eléctrico ante fuga de corriente.'
+        ]
+      }
+    ],
+
+    maintenancePlan: [
+      {
+        id: 'mt1',
+        personnel: '1 técnico mecánico',
+        task: 'Inspeccionar el estado físico y ajustar la tensión de la cinta transportadora y las correas de arrastre para prevenir roturas por fatiga o desgaste.',
+        frequency: 'Quincenal',
+        daysRemaining: 15
+      },
+      {
+        id: 'mt2',
+        personnel: '1 técnico mecánico',
+        task: 'Realizar ajuste mecánico y alineación geométrica de las guías de paso, barras de soporte y banda transportadora para evitar atascamientos por vibración.',
+        frequency: 'Mensual',
+        daysRemaining: 30
+      },
+      {
+        id: 'mt3',
+        personnel: '1 técnico mecánico',
+        task: 'Ejecutar el programa de lubricación en el eje del rodillo de arrastre principal para evitar fricción excesiva.',
+        frequency: 'Mensual',
+        daysRemaining: 30
+      },
+      {
+        id: 'mt4',
+        personnel: '1 técnico mecánico',
+        task: 'Calibrar la presión ejercida por el rodillo aplicador y las guías de estabilización superior para evitar la deformación de envases.',
+        frequency: 'Quincenal',
+        daysRemaining: 15
+      },
+      {
+        id: 'mt5',
+        personnel: '1 técnico instrumentista',
+        task: 'Limpiar las lentes y calibrar el sensor óptico de presencia de envase y el sensor de brecha de etiqueta para evitar fallas por acumulación de suciedad.',
+        frequency: 'Semanal',
+        daysRemaining: 7
+      },
+      {
+        id: 'mt6',
+        personnel: '1 técnico electrónico',
+        task: 'Sincronizar electrónicamente la velocidad de la banda transportadora con la del cabezal dispensador mediante el sistema de control.',
+        frequency: 'Mensual',
+        daysRemaining: 30
+      },
+      {
+        id: 'mt7',
+        personnel: '1 supervisor de línea',
+        task: 'Inspeccionar y estandarizar la configuración del potenciómetro de velocidad para evitar alteraciones manuales fuera de norma.',
+        frequency: 'Semanal',
+        daysRemaining: 7
+      },
+      {
+        id: 'mt8',
+        personnel: '1 técnico eléctrico',
+        task: 'Evaluar la integridad del aislamiento eléctrico en componentes internos y verificar ausencia de corrosión en el cable de puesta a tierra.',
+        frequency: 'Semestral',
+        daysRemaining: 180
+      },
+      {
+        id: 'mt9',
+        personnel: '1 operador',
+        task: 'Verificar las condiciones de almacenamiento (humedad) de los rollos de etiquetas y auditar la fecha de vencimiento del lote de adhesivo antes del montaje.',
+        frequency: 'Por turno',
+        daysRemaining: 0
+      },
+      {
+        id: 'mt10',
+        personnel: '1 operador',
+        task: 'Inspeccionar la correcta fijación y presencia de todas las guardas de seguridad del equipo tras rutinas de limpieza o ajuste.',
+        frequency: 'Diario',
+        daysRemaining: 1
+      }
+    ]
+  },
+  {
+    id: 'M-TERM',
+    code: 'TERM-LB900B-LC1500',
+    name: 'Selladora de Manga y Túnel Termoencogible',
+    brand: 'LONG DURABLE',
+    model: 'LB-900B / LC-1500',
+    serials: 'S/I',
+    distributor: 'LONG DURABLE MACHINERY CO., LTD.',
+    phone: 'N/D',
+    cost: '22.000 $ (aprox.)',
+    characteristics: '208-220 VAC, 60 Hz, 80 A, cámara 1,50 x 0,60 x 0,30 mts, Peso 450 kg (aprox.)',
+    area: 'Línea de Producción Principal',
+    status: 'Operativo',
+    criticality: 'Alta',
+    description: 'Empaque colectivo con film termoencogible mediante sellado y posterior contracción por calor.',
+    
+    functionalFailures: [
+      {
+        id: '1A',
+        functionDesc: 'Aplicar calor controlado y uniforme sobre la película termoencogible para lograr su contracción total sobre el producto, sin dañar el envase, manteniendo la temperatura y la velocidad de cinta ajustadas al tipo de producto y film.',
+        description: 'No genera calor en la cámara (Pérdida total de la función de termorretracción).',
+        mode: [
+          'Fundido o rotura de los tubos calefactores de titanio de radiación infrarroja.',
+          'Falla del ventilador/turbina de circulación de aire caliente.'
+        ],
+        cause: [
+          'Sobrecalentamiento por falla del sistema de control de temperatura o ciclos térmicos repetidos, agravado por la falta de mantenimiento preventivo documentado.',
+          'Desgaste de los rodamientos del motor del ventilador por falta de lubricación programada.'
+        ],
+        effect: [
+          'El túnel deja de generar calor por completo; el equipo queda detenido sin poder encoger el plástico, deteniendo el despacho del producto.',
+          'Calentamiento no homogéneo dentro de la cámara; contracción irregular del film y reproceso constante.'
+        ]
+      },
+      {
+        id: '1B',
+        functionDesc: 'Aplicar calor controlado y uniforme sobre la película termoencogible para lograr su contracción total sobre el producto, sin dañar el envase, manteniendo la temperatura y la velocidad de cinta ajustadas al tipo de producto y film.',
+        description: 'Aplica temperatura fuera del rango de proceso requerido.',
+        mode: [
+          'Sobrecalentamiento de la cámara por encima del set point.',
+          'Temperatura insuficiente en la cámara de calentamiento.'
+        ],
+        cause: [
+          'Falla del sensor/termopar de temperatura o del sistema de control (PLC).',
+          'Acumulación de polvo y suciedad sobre los tubos calefactores, reduciendo la radiación infrarroja efectiva.'
+        ],
+        effect: [
+          'Deformación, quemado o perforación del film; daño al producto contenido.',
+          'El film no contrae completamente; producto sale con arrugas y mal aspecto estético, no apto para despacho.'
+        ]
+      },
+      {
+        id: '1C',
+        functionDesc: 'Aplicar calor controlado y uniforme sobre la película termoencogible para lograr su contracción total sobre el producto, sin dañar el envase, manteniendo la temperatura y la velocidad de cinta ajustadas al tipo de producto y film.',
+        description: 'Detiene o varía indebidamente la velocidad de la cinta transportadora de malla.',
+        mode: [
+          'Falla del motor reductor de velocidad variable.',
+          'Atasco o rotura de la cinta transportadora de malla.'
+        ],
+        cause: [
+          'Desgaste de escobillas/rodamientos del motorreductor por uso continuo sin mantenimiento preventivo.',
+          'Fatiga del material de la malla por exposición prolongada a temperatura elevada, sin plan de reemplazo preventivo ni parada automática de emergencia ante atasco.'
+        ],
+        effect: [
+          'Variación irregular en el avance de la cinta; tiempo de exposición al calor incorrecto, producto sobreexpuesto o subexpuesto.',
+          'Paro total del túnel con producto atrapado dentro de la cámara caliente; riesgo de combustión del film o del producto y de daño severo al equipo si no se interviene de inmediato.'
+        ]
+      },
+      {
+        id: '2A',
+        functionDesc: 'Mantener la integridad física del producto o bandeja durante su paso por la cinta transportadora del túnel.',
+        description: 'Atasca, deforma o tumba los productos durante el recorrido interno de la máquina.',
+        mode: [
+          'Desalineación de las guías o topes internos del túnel.'
+        ],
+        cause: [
+          'Desajuste mecánico de las guías laterales de la cinta por vibración y falta de calibración periódica.'
+        ],
+        effect: [
+          'Productos caídos, volcados o mal posicionados dentro del túnel; posible atasco que detiene el recorrido interno.'
+        ]
+      },
+      {
+        id: '3A',
+        functionDesc: 'Operar de manera segura sin emitir calor excesivo al área de trabajo ni presentar riesgos para el operador.',
+        description: 'Fugas de calor excesivas o fallas en el aislamiento térmico/eléctrico que exponen al personal a riesgos de quemaduras o accidentes.',
+        mode: [
+          'Fuga de calor por sellos o puertas de la estructura de la cámara deteriorados.'
+        ],
+        cause: [
+          'Degradación de los empaques aislantes de la cámara por ciclos térmicos repetidos y falta de reemplazo preventivo.'
+        ],
+        effect: [
+          'Riesgo de quemadura para el operador al manipular el equipo; pérdida de eficiencia energética.'
+        ]
+      }
+    ],
+
+    maintenancePlan: [
+      {
+        id: 'mt1',
+        personnel: '1 técnico',
+        task: 'Realizar limpieza de los tubos calefactores para remover la acumulación de polvo y suciedad que reduce la radiación infrarroja efectiva.',
+        frequency: 'Quincenal',
+        daysRemaining: 15
+      },
+      {
+        id: 'mt2',
+        personnel: '1 técnico',
+        task: 'Inspeccionar el estado físico de los tubos calefactores de titanio para prevenir roturas derivadas de los ciclos térmicos repetidos.',
+        frequency: 'Mensual',
+        daysRemaining: 30
+      },
+      {
+        id: 'mt3',
+        personnel: '1 técnico mecánico',
+        task: 'Ejecutar lubricación programada de los rodamientos del motor del ventilador/turbina de circulación de aire caliente.',
+        frequency: 'Mensual',
+        daysRemaining: 30
+      },
+      {
+        id: 'mt4',
+        personnel: '1 técnico instrumentista',
+        task: 'Calibrar el sensor/termopar de temperatura y verificar lazos de control del PLC para evitar sobrecalentamiento por encima del set point.',
+        frequency: 'Semestral',
+        daysRemaining: 180
+      },
+      {
+        id: 'mt5',
+        personnel: '1 operador',
+        task: 'Inspeccionar la integridad de la cinta transportadora.',
+        frequency: 'Semanal',
+        daysRemaining: 7
+      },
+      {
+        id: 'mt6',
+        personnel: '1 Técnico Mecánico / 1 Técnico Eléctrico',
+        task: 'Revisar el desgaste de escobillas y lubricar los rodamientos del motor reductor de velocidad variable.',
+        frequency: 'Trimestral',
+        daysRemaining: 90
+      },
+      {
+        id: 'mt7',
+        personnel: '2 técnicos mecánicos',
+        task: 'Inspeccionar y sustituir los empaques aislantes de la cámara que presenten degradación por los ciclos térmicos repetidos, previniendo fugas de calor.',
+        frequency: 'Semestral',
+        daysRemaining: 180
+      }
+    ]
+  }
+];
+</file>
+
+<file path="src/pages/MachineModule.jsx">
+/**
+ * @file MachineModule.jsx
+ * @description Módulo de máquinas. Controla la vista entre la lista de máquinas y su detalle.
+ */
+import React, { useState } from 'react';
+import MachineList from '../components/machines/MachineList';
+import MachineDetails from '../components/machines/MachineDetails';
+// Nota: CSS importado según tu estructura original solicitada si requieres estilos específicos de vista
+// import styles from './MachineModule.module.css'; 
+
+const MachineModule = () => {
+  const [selectedMachine, setSelectedMachine] = useState(null);
+
+  if (selectedMachine) {
+    return <MachineDetails machine={selectedMachine} onBack={() => setSelectedMachine(null)} />;
+  }
+  return <MachineList onSelectMachine={setSelectedMachine} />;
+};
+
+export default MachineModule;
+</file>
+
+<file path="src/pages/MachineModule.module.css">
+/* Espacio reservado para estilos específicos de esta vista que no pertenezcan al componente hijo */
+</file>
+
+<file path="src/pages/MaintenanceModule.jsx">
+/**
+ * @file MaintenanceModule.jsx
+ * @description Vista principal del módulo de mantenimiento.
+ */
+import React from 'react';
+import MaintenancePlan from '../components/maintenance/MaintenancePlan';
+// import styles from './MaintenanceModule.module.css';
+
+const MaintenanceModule = () => {
+  return <MaintenancePlan />;
+};
+
+export default MaintenanceModule;
+</file>
+
+<file path="src/pages/MaintenanceModule.module.css">
+/* Espacio reservado para estilos específicos de la vista de mantenimiento */
+</file>
+
+<file path="src/App.jsx">
+/**
+ * @file App.jsx
+ * @description Componente raíz de enrutamiento y layout principal.
+ */
+import React, { useState, useEffect } from 'react';
+import { Settings } from 'lucide-react';
+import Sidebar from './components/layout/Sidebar';
+import Topbar from './components/layout/Topbar';
+import MachineModule from './pages/MachineModule';
+import MaintenanceModule from './pages/MaintenanceModule';
+import styles from './App.module.css';
+
+/* Módulo temporal para páginas no desarrolladas */
+const BlankModule = ({ title }) => (
+  <div className={styles.blank_container}>
+    <div className={styles.blank_content}>
+      <Settings size={48} className={styles.blank_icon} />
+      <h2 className={styles.blank_title}>Módulo: {title}</h2>
+      <p className={styles.blank_text}>Contenido en desarrollo...</p>
+    </div>
+  </div>
+);
+
+export default function App() {
+  const [currentRoute, setCurrentRoute] = useState('fichas');
+  const [currentDate, setCurrentDate] = useState('');
+  
+  useEffect(() => {
+    const date = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+    const formatted = date.toLocaleDateString('es-ES', options);
+    setCurrentDate(formatted.charAt(0).toUpperCase() + formatted.slice(1));
+  }, []);
+
+  // Simulación de Router básico
+  const renderPage = () => {
+    switch (currentRoute) {
+      case 'fichas': return <MachineModule />;
+      case 'planes': return <MaintenanceModule />;
+      case 'inicio': return <BlankModule title="Inicio / Dashboard" />;
+      case 'ajustes': return <BlankModule title="Ajustes del Sistema" />;
+      default: return <MachineModule />;
+    }
+  };
+
+  return (
+    <div className={styles.app_container}>
+      <Sidebar 
+        activeModule={currentRoute} 
+        setActiveModule={setCurrentRoute} 
+        currentDate={currentDate}
+      />
+
+      <div className={styles.app_mainWrapper}>
+        <Topbar />
+        
+        <main className={styles.app_mainContent}>
+          <div className={styles.app_backgroundPattern}></div>
+          <div className={styles.app_contentInner}>
+              {renderPage()}
+          </div>
+        </main>
+        
+        <footer className={styles.app_footer}>
+            <span>Software Desarrollado para SOLQUIVEN, S.A. - Planta Principal v2.0</span>
+            <span>Versión CSS Modules Modularizada</span>
+        </footer>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/App.module.css">
+.app_container { display: flex; height: 100vh; overflow: hidden; }
+.app_mainWrapper { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.app_mainContent { flex: 1; padding: 1.5rem; overflow-y: auto; position: relative; }
+
+@media (min-width: 768px) { 
+  .app_mainContent { padding: 2rem; } 
+}
+
+.app_backgroundPattern { 
+  position: absolute; 
+  inset: 0; 
+  opacity: 0.05; 
+  pointer-events: none; 
+  background-image: radial-gradient(#003882 1px, transparent 1px); 
+  background-size: 30px 30px; 
+}
+
+.app_contentInner { 
+  position: relative; 
+  z-index: 10; 
+  height: 100%; 
+  max-width: 1400px; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.app_footer { 
+  background: white; 
+  border-top: 1px solid #e2e8f0; 
+  padding: 0.75rem 1.5rem; 
+  display: flex; 
+  justify-content: space-between; 
+  font-size: 0.75rem; 
+  color: #64748b; 
+  flex-shrink: 0; 
+}
+
+/* Pantallas vacías (BlankModule) */
+.blank_container { display: flex; align-items: center; justify-content: center; height: 100%; }
+.blank_content { text-align: center; color: #94a3b8; }
+.blank_icon { margin: 0 auto 1rem auto; opacity: 0.5; color: #cbd5e1; }
+.blank_title { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: #64748b; }
+.blank_text { font-size: 0.875rem; }
+</file>
+
+<file path="src/index.css">
+/* =========================================================
+   ESTILOS GLOBALES 
+   ========================================================= */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body { 
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+  background-color: #e8eaf6; 
+  color: #333; 
+}
+
+button { 
+  cursor: pointer; 
+  border: none; 
+  background: none; 
+  font-family: inherit; 
+}
+
+input { 
+  font-family: inherit; 
+  outline: none; 
+}
+
+ul { 
+  list-style: none; 
+}
+</file>
+
+<file path="src/main.jsx">
+/**
+ * @file main.jsx
+ * @description Punto de entrada principal de la aplicación React.
+ * Inicializa el árbol de componentes y carga los estilos globales.
+ */
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css'; // Estilos globales
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="eslint.config.js">
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      globals: globals.browser,
+      parserOptions: { ecmaFeatures: { jsx: true } },
+    },
+  },
+])
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solquiven-mantenimiento</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "solquiven-mantenimiento",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^1.52.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4",
+    "repomix": "^1.19.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.10.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.6",
+    "globals": "^17.12.0",
+    "vite": "^8.3.0"
+  }
+}
+</file>
+
+<file path="README.md">
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</file>
+
+<file path="vite.config.js">
+import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+</file>
+
+</files>

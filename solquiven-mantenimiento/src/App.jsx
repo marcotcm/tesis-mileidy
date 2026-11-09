@@ -8,6 +8,7 @@ import Sidebar from './components/layout/Sidebar';
 import Topbar from './components/layout/Topbar';
 import MachineModule from './pages/MachineModule';
 import MaintenanceModule from './pages/MaintenanceModule';
+import HomeModule from './pages/HomeModule';
 import styles from './App.module.css';
 
 /* Módulo temporal para páginas no desarrolladas */
@@ -37,9 +38,8 @@ export default function App() {
     switch (currentRoute) {
       case 'fichas': return <MachineModule />;
       case 'planes': return <MaintenanceModule />;
-      case 'inicio': return <BlankModule title="Inicio / Dashboard" />;
-      case 'ajustes': return <BlankModule title="Ajustes del Sistema" />;
-      default: return <MachineModule />;
+      case 'inicio': return <HomeModule />;
+      default: return <HomeModule />;
     }
   };
 

@@ -1,0 +1,60 @@
+.carousel_wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  position: relative;
+  /* Efecto de desvanecimiento en los bordes para que parezca continuo */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carousel_track {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  /* Ocultar barra de scroll */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel_track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel_slide {
+  flex: 0 0 auto;
+  width: 240px;
+  height: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 56, 130, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efecto hover estilo perspectiva */
+.carousel_slide:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 56, 130, 0.2);
+}
+
+.slide_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Placeholder temporal si no hay fotos */
+.placeholder_img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #003882 0%, #00b0f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
