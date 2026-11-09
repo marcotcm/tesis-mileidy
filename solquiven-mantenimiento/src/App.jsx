@@ -23,7 +23,7 @@ const BlankModule = ({ title }) => (
 );
 
 export default function App() {
-  const [currentRoute, setCurrentRoute] = useState('fichas');
+  const [currentRoute, setCurrentRoute] = useState('inicio');
   const [currentDate, setCurrentDate] = useState('');
   
   useEffect(() => {
@@ -36,9 +36,9 @@ export default function App() {
   // Simulación de Router básico
   const renderPage = () => {
     switch (currentRoute) {
+      case 'inicio': return <HomeModule />;
       case 'fichas': return <MachineModule />;
       case 'planes': return <MaintenanceModule />;
-      case 'inicio': return <HomeModule />;
       default: return <HomeModule />;
     }
   };
@@ -61,10 +61,6 @@ export default function App() {
           </div>
         </main>
         
-        <footer className={styles.app_footer}>
-            <span>Software Desarrollado para SOLQUIVEN, S.A. - Planta Principal v2.0</span>
-            <span>Versión CSS Modules Modularizada</span>
-        </footer>
       </div>
     </div>
   );

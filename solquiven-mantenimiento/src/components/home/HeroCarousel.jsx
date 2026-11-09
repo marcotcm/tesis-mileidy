@@ -1,25 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './HeroCarousel.module.css';
-import carouselData from '../../data/carouselData.json';
+import { carouselData } from '../../data/carouselData.js';
 
 const HeroCarousel = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  // Duplicamos el arreglo para crear el efecto de scroll infinito sin cortes
+  const doubledData = [...carouselData, ...carouselData];
+
   return (
-    <div className={styles.carousel_wrapper}>
-      <div className={styles.carousel_track}>
-        {carouselData.map((item) => (
-          <div key={item.id} className={styles.carousel_slide}>
-            {/* Si aún no tienes las fotos, esto mostrará un placeholder con el color corporativo */}
-            {item.src.includes('ruta/a/tu/foto') ? (
-              <div className={styles.placeholder_img}>
-                <span>Foto {item.id}</span>
-              </div>
-            ) : (
+    <>
+      <div className={styles.carousel_wrapper}>
+        <div className={`${styles.carousel_track} ${selectedImage ? styles.paused : ''}`}>
+          {doubledData.map((item, index) => (
+            <div 
+              key={`${item.id}-${index}`} 
+              className={styles.carousel_slide}
+              onClick={() => setSelectedImage(item.src)}
+            >
               <img src={item.src} alt={item.alt} className={styles.slide_img} />
-            )}
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+
+      {/* Overlay Negro (Lightbox) */}
+      {selectedImage && (
+        <div className={styles.lightbox_overlay} onClick={() => setSelectedImage(null)}>
+          <img src={selectedImage} alt="Vista ampliada" className={styles.lightbox_img} />
+        </div>
+      )}
+    </>
   );
 };
 

@@ -2,6 +2,11 @@ import React from 'react';
 import HeroCarousel from '../components/home/HeroCarousel';
 import styles from './HomeModule.module.css';
 
+// Importamos los logos de Vite correctamente
+import logoIzq from '../assets/image-removebg-preview (55).png';
+import logoCentro from '../assets/image-removebg-preview (57).png';
+import logoDer from '../assets/image-removebg-preview (56).png';
+
 const HomeModule = () => {
   return (
     <div className={styles.home_container}>
@@ -9,18 +14,15 @@ const HomeModule = () => {
       {/* Sección Superior: Logos */}
       <div className={styles.logos_header}>
         <div className={styles.logo_box}>
-          <span className={styles.logo_hint}>Ruta Logo Izq</span>
-         <img src="../assets/image-removebg-preview (55).png" alt="Logo Izquierdo" /> 
+          <img src={logoIzq}  alt="Logo Izquierdo" /> 
         </div>
         
         <div className={styles.logo_box}>
-          <span className={styles.logo_hint}>Ruta Logo Centro</span>
-           <img src="../assets/image-removebg-preview (57).png" alt="Logo Centro" /> 
+          <img src={logoCentro} style={{ maxWidth: '600%', maxHeight: '600%', marginTop: '1.5rem' }} alt="Logo Centro" /> 
         </div>
 
         <div className={styles.logo_box}>
-          <span className={styles.logo_hint}>Ruta Logo Der</span>
-          <img src="../assets/image-removebg-preview (56).png" alt="Logo Derecho" /> 
+          <img src={logoDer} alt="Logo Derecho" /> 
         </div>
       </div>
 
